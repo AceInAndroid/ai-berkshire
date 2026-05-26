@@ -103,21 +103,38 @@
 
 ---
 
-### 6. Veeco Instruments (VECO，纳斯达克) ★★★★ 【2026-05-26升级：★★★→★★★★】
-**市值**：约$3.8B（股价~$62，2026-05-05盘后）  
-**瓶颈环节**：MOCVD外延设备（A级，#2供应商）  
-**最新数据（Q1 2026，2026-05-05披露）**：
-- Q1营收$158.3M（同比-5%，小幅逊预期）
-- Non-GAAP EPS $0.14（逊预期$0.19）
-- **宣布$250M+ InP MOCVD设备订单**（核心信号）
-- 先进封装业务**+100% YoY**
-- FY2026指引：$740-800M（中值$770M）
-- 股价盘后**+21.76%至$62.01**
-**估值**：市值~$3.8B / FY指引$770M → P/S约4.9x（合理，高于此前1.1B估计，需更新）
-**升级理由**：$250M+ InP设备订单（相当于年营收约1/3）是独立的强烈需求验证信号，与Aixtron收到Lumentum订单形成双重交叉验证。先进封装翻倍说明业务多元化支撑更稳健。盘后+22%说明市场认可InP逻辑。  
-**风险**：EPS逊预期、Q1营收同比下滑；InP订单能否在Q3-Q4快速转化为营收需验证；FY指引是否保守  
-**行动**：升至★★★★，候选深入研究；确认P/S合理性后评估是否执行/investment-team  
-**来源**：[Veeco Q1 GlobeNewswire](https://www.globenewswire.com/news-release/2026/05/05/3288214/0/en/Veeco-Reports-First-Quarter-2026-Financial-Results/default.aspx) | [StockTitan](https://www.stocktitan.net/news/VECO/veeco-reports-first-quarter-2026-financial-x9xfz8ljp2dp.html) | [Motley Fool Q1电话会](https://www.fool.com/earnings/call-transcripts/2026/05/05/veeco-veco-q1-2026-earnings-call-transcript/)
+### 6. Veeco Instruments (VECO，纳斯达克) ⚠️合并待完成，暂停独立评估 【2026-05-26 08:10更新】
+**状态**：Axcelis（ACLS）以全股票形式收购VECO，合并估值$44亿。VECO作为独立投资逻辑已实质终止——持有VECO = 等待以ACLS股份（约41.6%合并后持仓）兑现的并购套利。  
+**合并关键里程碑**：
+- ✅ Axcelis股东特别会议批准（2026-02-06）
+- ✅ VECO股东同意
+- **⏳ 等待：中国SAMR（国家市场监管总局）审批——唯一剩余监管障碍**
+- 预计完成：H2 2026
+**核心风险**：SAMR拒绝/附条件批准的可能性（中美科技战背景）→ 若失败，VECO恢复独立标的但股价可能大幅回调  
+**不再独立评估原因**：并购逻辑替代了瓶颈逻辑；具体MOCVD/InP敞口需通过合并后的ACLS获取  
+**来源**：[Axcelis股东批准合并](https://www.prnewswire.com/news-releases/axcelis-stockholders-approve-merger-with-veeco-302680838.html) | [合并详情](https://marklapedus.substack.com/p/axcelis-to-acquire-veeco-for-44-billion)
+
+---
+
+### 6b. Axcelis Technologies (ACLS，纳斯达克) ★★★ 【2026-05-26 08:10 新增：VECO合并后载体】
+**瓶颈环节**：合并后覆盖 MOCVD外延设备（A级）+ 离子注入（半导体再工业化受益）  
+**市值**：$4.83B（股价$155.38，2026-05-26）  
+**合并后估值估算**：
+- 合并后年收入：ACLS ~$800M + VECO ~$770M ≈ $1.47B
+- 当前ACLS市值 / 合并后收入 → P/S **~3.3x**（合理）
+- ACLS standalone P/E：48.9x（合理范围）
+- $35M年化成本协同（24个月内），EPS accretive第一年
+**信号验证**：
+- ✅ 合并后成为美国第四大晶圆制造设备商，TAM >$50亿
+- ✅ VECO $250M+ InP MOCVD订单独立验证设备需求真实
+- ✅ Aixtron收到Lumentum MOCVD订单——行业需求双重交叉验证
+- ⚠️ SAMR审批是唯一关键障碍（中美科技战风险）
+- ⚠️ 分析师共识目标价$101.50，较现价$155.38**低35%**
+- ⚠️ 独立估值模型：公允价值约$92，较现价低41%
+- ❌ ACLS Q1 2026 FY指引：营收2026基本持平2025（~$800M），增长动力来自VECO合并后协同
+**估值安全边际（合并后）**：以$4.83B买入ACLS，10年25xPE退出，需净利润$500M（假设10%回报），对应收入约$2.5B。从$1.47B到$2.5B，10年CAGR约5%。技术上可达，但当前价格无充足安全边际（分析师目标价支持更低入场点）。  
+**建议**：等SAMR审批结果；若获批且股价回调至分析师目标区间（$100-110），则评估是否执行 `/investment-team`；当前价格不追高。  
+**来源**：[ACLS Q1 2026 SEC Filing](https://www.sec.gov/Archives/edgar/data/0001113232/000110465926057147/tm2613844d1_ex99-1.htm) | [合并联合声明](https://investor.axcelis.com/news-releases/news-release-details/axcelis-technologies-and-veeco-instruments-combine-creating)
 
 ---
 
@@ -201,3 +218,5 @@
 | 2026-05-26 05:18 | CHG.L | **数据强化** | 订单覆盖率85%（↑from 76%）；挪威275%扩产；12-15年合同；7/7分析师Buy；June 9财报催化剂；Rheinmetall抢NC独立验证 |
 | 2026-05-26 07:31 | AIXA | **市值修正+估值警告** | 实际市值€6.09B（前估€2-3B），P/S实际10.9x（非4-5x），P/E 101x；Berenberg下调Hold目标€42；现价€53.66已在Berenberg目标价上方28%；不追高 |
 | 2026-05-26 07:31 | LEU | **新增★★★** | Centrus Energy：唯一西方HALEU商业富集商；DOE $2.7B任务指令；P/S 7.4x绿灯；等SMR商业化催化剂 |
+| 2026-05-26 08:10 | VECO | **⚠️合并待完成，暂停独立评估** | Axcelis全股票收购，$44亿，ACLS股东已批准，最后障碍：中国SAMR审批（H2 2026预期）；VECO独立逻辑终止 |
+| 2026-05-26 08:10 | ACLS | **新增★★★（VECO合并后载体）** | 合并后MOCVD+离子注入双平台，合并后P/S~3.3x合理；等SAMR结果+回调至分析师目标区间$100-110再评估 |

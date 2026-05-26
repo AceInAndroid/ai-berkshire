@@ -1,6 +1,6 @@
 # 供应链瓶颈总地图（持续更新）
 
-最后更新：2026-05-26 07:31（第三轮扫描）
+最后更新：2026-05-26 08:10（第四轮扫描）
 
 ---
 
@@ -116,7 +116,7 @@
 
 **关键洞察**：这是InP扩产链中被市场忽视的"底层之底层"——任何InP晶圆产能扩张都必须先等MOCVD设备，而Aixtron控制了70-90%的阀门。相比已被炒至P/S 84x的AXT，Aixtron是更合理的入口。
 
-**主要供应商**：Aixtron (AIXA，法兰克福，70-90%份额，★核心关注), Veeco (VECO，纳斯达克，#2)
+**主要供应商**：Aixtron (AIXA，法兰克福，70-90%份额，★核心关注), Veeco (VECO，纳斯达克，#2，⚠️被Axcelis/ACLS全股票收购，H2 2026待中国SAMR批准)
 
 **来源**：[Aixtron Q1 2026业绩](https://finance.yahoo.com/markets/stocks/articles/aixtron-q1-earnings-call-highlights-160408260.html) | [Lumentum订购Aixtron](https://www.semiconductor-today.com/news_items/2026/may/aixtron-200526.shtml) | [Veeco $2.5亿InP订单](https://www.globenewswire.com/news-release/2026/05/05/3288217/0/en/Veeco-Announces-250-Million-in-Equipment-Orders-for-Manufacturing-Indium-Phosphide-Lasers.html)
 
@@ -192,3 +192,6 @@
 | 2026-05-26 07:31 | **新增 B+级** | HALEU：DOE $2.7B任务指令，Centrus唯一西方商业富集商，12MT/年Piketon产能；SMR 2027-2028年前大规模需求不落地，暂定B+级 |
 | 2026-05-26 07:31 | **新增 L3细节** | 变压器瓶颈L3层：Cleveland-Cliffs是美国唯一GOES生产商，正投$1.5亿扩产；美国国内变压器厂全部依赖单一钢供应来源 |
 | 2026-05-26 07:31 | **ICL Q1确认** | 溴瓶颈（0b）：ICL Q1 2026收入+14%，EBITDA +15%，溴价全年维持高位；信号持续 |
+| 2026-05-26 08:10 | **VECO/ACLS合并** | MOCVD设备A级：Axcelis全股票收购Veeco（$44亿），ACLS股东已批准，中国SAMR审批待完成（H2 2026）；VECO独立标的逻辑暂停，ACLS成MOCVD敞口载体；合并后P/S~3.3x，分析师目标价较现价低35% |
+| 2026-05-26 08:10 | **ICL溴化物再确认** | Q1 2026收入$20亿（+14%），EBITDA$4.12亿（+15%），溴价$12,000/MT维持高位，FY EBITDA指引上调至$1.5B-$1.7B；瓶颈信号持续，但ICL非纯正可投资标的 |
+| 2026-05-26 08:10 | **Chemring Tennessee设施** | 新自动化设施过渡性中断（非现金减值），FY指引维持，不影响长期逻辑；6月9日半年报为下一验证点 |
