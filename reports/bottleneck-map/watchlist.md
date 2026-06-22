@@ -7477,3 +7477,22 @@ Q1 2026已验证：收入$226.1M(+32%)，HBM4探针卡Q2指引再创新高。估
 | 2026-06-22 14:05 | **IQE.L** | ⚡ **Nvidia $4B EML锁定强化IQE逻辑** | Nvidia锁定Lumentum/Coherent产能，非Nvidia云商须寻替代EML路径。IQE-Tower协议（6/15）覆盖200G/400G，战略价值上升。★★★★维持，等8月H1中报。 |
 
 *来源（本轮新增）：Yahoo Finance/Roic.ai/CompaniesMarketCap（Unimicron财务）、Morgan Stanley（ABF CAGR预测）、Crane Worldwide Logistics（Section 232 6月更新）、EY Tax News（精炼铜6/30截止）、TechTimes 5/27（Nvidia $4B EML锁定）、EE Times Asia（EML激光短缺）、Wukong Substack（InP供需数据）*
+
+---
+
+## 更新记录 — 2026-06-22 15:07（本轮新增/变化）
+
+### AXT Inc（NASDAQ:AXTI）— ★★ 已识别，不追踪
+- **识别时间**：2026-06-22 15:07
+- **瓶颈定位**：Layer 3，InP（磷化铟）衬底，AI光模块EML激光器供应链咽喉
+- **瓶颈评级**：S级（物理短缺+地缘政治双重约束）
+- **为什么是瓶颈**：全球InP月需求700k-800k片 vs 供给400k片（缺口约50%）；中国MOFCOM自2025年2月起要求每笔出口单独许可，处理~3个月，使AXT（最大InP供应商）随时面临政策截断风险
+- **市值**：$5.52B USD | **TTM营收**：$88.3M | **PS**：62.5x 🔴
+- **红灯原因**：PS=62.5x > 30x，且TTM增速+38.7% < 100%；市值远超InP TAM的20%；净亏损
+- **信号强度**：★★（估值透支，封顶）
+- **关注条件**：若股价大幅回调（PS < 15x）且InP季度收入超预期→重新评估；或中国进一步收紧出口→监测供给冲击对IQE的影响
+- **来源**：Kitco News（2026-06-11）、Semiconductor Today（AXT Q4/2025）、StockAnalysis（估值）
+
+### ICL Group（NYSE:ICL）— ★★★★ → 升级审议中（待8/5 Q2）
+- **变化**：本轮新增"伊朗冲突供给风险"维度——以色列死海工厂（ICL主要溴化物生产地）在伊朗导弹射程内；南韩97.5%溴化物进口来自ICL；溴化物价格$12,000/MT（正常$6-7k）。ICL估值仍绿灯（PS~0.93x，远期PE~12x），FY 2026 EBITDA指引上调$100M至$1.5-1.7B
+- **升级至★★★★★条件**：8/5 Q2确认溴价环比维持+EBITDA实现$380-420M/季
