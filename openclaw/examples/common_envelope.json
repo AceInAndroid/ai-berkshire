@@ -1,0 +1,14 @@
+{
+  "schema_version": "ai-berkshire-openclaw-export-v1",
+  "generated_at": "2026-06-24T00:00:00+08:00",
+  "source_repo": "ai-berkshire",
+  "source_report": "reports/小米/小米-research-20260624.md",
+  "artifact_type": "company_research",
+  "status": "degraded",
+  "confidence": "medium",
+  "market_thesis": "小米汽车业务能否持续盈利是核心变量。",
+  "validation_summary": {
+    "report_data_section_present": true,
+    "report_audit_required": true
+  }
+}

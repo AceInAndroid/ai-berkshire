@@ -1,0 +1,1358 @@
+{
+  "generated_at": "2026-06-23T18:01:34+08:00",
+  "status": "healthy",
+  "coverage": {
+    "symbols_total": 46,
+    "symbols_with_order_evidence": 7,
+    "symbols_with_margin_cashflow": 7,
+    "source_count": 8,
+    "active_market_symbols": 106
+  },
+  "market_thesis": "AI 投资主线今天应优先看真实瓶颈：算力芯片、HBM、先进制程封装、电力散热和高速网络。只有同时有订单需求和毛利现金流支撑的公司，才值得排在普通热门股前面。",
+  "bottleneck_lanes": [
+    {
+      "lane": "算力芯片",
+      "bottleneck_level": "高",
+      "pricing_power": "强",
+      "why_now": "头部云厂商仍在扩大 AI 训练和推理投入，GPU、定制加速器和高速互联仍是需求最集中的环节。",
+      "risks": [
+        "出口限制可能改变订单节奏",
+        "客户集中度高",
+        "估值已经反映较高增长预期"
+      ],
+      "symbol_count": 5
+    },
+    {
+      "lane": "HBM 和存储",
+      "bottleneck_level": "高",
+      "pricing_power": "强",
+      "why_now": "高带宽内存直接决定 AI 加速器供给，订单能见度和产品代际切换会影响整条算力链。",
+      "risks": [
+        "存储周期反转会压缩毛利",
+        "扩产过快可能带来价格压力"
+      ],
+      "symbol_count": 3
+    },
+    {
+      "lane": "先进制程和封装",
+      "bottleneck_level": "高",
+      "pricing_power": "强",
+      "why_now": "先进制程、先进封装和设备交付决定 AI 芯片实际放量速度，是订单兑现的底层约束。",
+      "risks": [
+        "资本开支周期波动",
+        "地缘政治和出口管制",
+        "成熟制程价格竞争"
+      ],
+      "symbol_count": 8
+    },
+    {
+      "lane": "网络和光通信",
+      "bottleneck_level": "中高",
+      "pricing_power": "中高",
+      "why_now": "大规模 AI 集群需要更高带宽和低延迟网络，交换机、光模块和光器件跟随数据中心扩容。",
+      "risks": [
+        "客户采购节奏波动",
+        "单一大客户订单变化会放大股价波动"
+      ],
+      "symbol_count": 5
+    },
+    {
+      "lane": "电力和散热",
+      "bottleneck_level": "中高",
+      "pricing_power": "中高",
+      "why_now": "AI 数据中心功耗上升，供电、散热、变压器和电网工程成为算力扩张的现实约束。",
+      "risks": [
+        "项目交付周期长",
+        "利率和电力监管影响估值"
+      ],
+      "symbol_count": 7
+    },
+    {
+      "lane": "AI 软件和数据",
+      "bottleneck_level": "中",
+      "pricing_power": "分化",
+      "why_now": "企业 AI 落地需要数据治理、推理平台和云服务，真正有客户粘性的公司才有持续定价能力。",
+      "risks": [
+        "竞争加剧",
+        "客户试点转正式采购仍需验证",
+        "利润兑现慢于收入增长"
+      ],
+      "symbol_count": 8
+    },
+    {
+      "lane": "新能源和供电链",
+      "bottleneck_level": "中",
+      "pricing_power": "分化",
+      "why_now": "AI 数据中心供电需求和新能源汽车产业链同时消耗电池、储能、电网和电力设备资源。",
+      "risks": [
+        "新能源车价格战",
+        "锂电材料价格周期",
+        "补贴和贸易政策变化"
+      ],
+      "symbol_count": 10
+    }
+  ],
+  "top_targets": [
+    {
+      "symbol": "NVDA",
+      "display_name": "英伟达（NVDA）",
+      "market": "US",
+      "lane": "算力芯片",
+      "action": "重点研究",
+      "score": 0.95,
+      "evidence": {
+        "orders": [
+          "云厂商 AI 训练和推理需求继续推高数据中心 GPU 采购。"
+        ],
+        "margin": [
+          "数据中心业务占比高，整体毛利率维持高位，说明定价权仍强。"
+        ],
+        "cashflow": [
+          "高利润业务带来强经营现金流，能继续支持平台迭代。"
+        ],
+        "customers": [
+          "客户集中在头部云厂商、主权 AI 和大型企业。"
+        ]
+      },
+      "evidence_provenance": [
+        {
+          "source_type": "structured_baseline",
+          "source_name": "NVIDIA investor relations",
+          "source_time": "2026-06-23T18:01:34+08:00",
+          "confidence": 0.68
+        },
+        {
+          "source_type": "market_scan",
+          "source_name": "latest_market_scan",
+          "source_time": "2026-06-23T18:01:34+08:00",
+          "confidence": 0.6
+        }
+      ],
+      "risk_notes": [
+        "出口限制可能改变订单节奏",
+        "客户集中度高"
+      ]
+    },
+    {
+      "symbol": "MU",
+      "display_name": "美光科技（MU）",
+      "market": "US",
+      "lane": "HBM 和存储",
+      "action": "重点研究",
+      "score": 0.95,
+      "evidence": {
+        "orders": [
+          "HBM 产品需求与 AI 加速器放量绑定，订单能见度优于普通存储。"
+        ],
+        "margin": [
+          "高端内存占比提升时，毛利率通常好于传统周期底部。"
+        ],
+        "cashflow": [
+          "数据中心内存拉动收入质量改善，现金流恢复是核心观察点。"
+        ],
+        "customers": [
+          "客户集中在 GPU 平台、服务器和云厂商供应链。"
+        ]
+      },
+      "evidence_provenance": [
+        {
+          "source_type": "structured_baseline",
+          "source_name": "Micron investor relations",
+          "source_time": "2026-06-23T18:01:34+08:00",
+          "confidence": 0.68
+        },
+        {
+          "source_type": "market_scan",
+          "source_name": "latest_market_scan",
+          "source_time": "2026-06-23T18:01:34+08:00",
+          "confidence": 0.6
+        }
+      ],
+      "risk_notes": [
+        "存储周期反转会压缩毛利",
+        "扩产过快可能带来价格压力"
+      ]
+    },
+    {
+      "symbol": "TSM",
+      "display_name": "台积电（TSM）",
+      "market": "US",
+      "lane": "先进制程和封装",
+      "action": "重点研究",
+      "score": 0.95,
+      "evidence": {
+        "orders": [
+          "先进制程和先进封装需求受 AI 芯片放量拉动。"
+        ],
+        "margin": [
+          "先进制程占比高，毛利率体现制造端定价能力。"
+        ],
+        "cashflow": [
+          "大规模资本开支需要持续订单支撑，现金流质量是关键约束。"
+        ],
+        "customers": [
+          "客户覆盖 AI 芯片、手机芯片和高性能计算平台。"
+        ]
+      },
+      "evidence_provenance": [
+        {
+          "source_type": "structured_baseline",
+          "source_name": "TSMC investor relations",
+          "source_time": "2026-06-23T18:01:34+08:00",
+          "confidence": 0.68
+        },
+        {
+          "source_type": "market_scan",
+          "source_name": "latest_market_scan",
+          "source_time": "2026-06-23T18:01:34+08:00",
+          "confidence": 0.6
+        }
+      ],
+      "risk_notes": [
+        "资本开支周期波动",
+        "地缘政治和出口管制"
+      ]
+    },
+    {
+      "symbol": "AVGO",
+      "display_name": "博通（AVGO）",
+      "market": "US",
+      "lane": "算力芯片",
+      "action": "重点研究",
+      "score": 0.95,
+      "evidence": {
+        "orders": [
+          "定制 AI 加速器和 AI 网络需求带动订单能见度提升。"
+        ],
+        "margin": [
+          "半导体和软件组合支撑较高盈利能力。"
+        ],
+        "cashflow": [
+          "自由现金流强，能支撑研发、并购整合和股东回报。"
+        ],
+        "customers": [
+          "客户主要是大型云厂商和网络设备需求方。"
+        ]
+      },
+      "evidence_provenance": [
+        {
+          "source_type": "structured_baseline",
+          "source_name": "Broadcom investor relations",
+          "source_time": "2026-06-23T18:01:34+08:00",
+          "confidence": 0.68
+        },
+        {
+          "source_type": "market_scan",
+          "source_name": "latest_market_scan",
+          "source_time": "2026-06-23T18:01:34+08:00",
+          "confidence": 0.6
+        }
+      ],
+      "risk_notes": [
+        "出口限制可能改变订单节奏",
+        "客户集中度高"
+      ]
+    },
+    {
+      "symbol": "0981.HK",
+      "display_name": "中芯国际（0981.HK）",
+      "market": "HK",
+      "lane": "先进制程和封装",
+      "action": "重点研究",
+      "score": 0.95,
+      "evidence": {
+        "orders": [
+          "国产芯片需求和本土供应链替代提升产能利用率观察价值。"
+        ],
+        "margin": [
+          "成熟制程竞争仍会压制毛利率，先进产能改善是关键变量。"
+        ],
+        "cashflow": [
+          "重资本开支模式下，现金流和折旧压力必须持续跟踪。"
+        ],
+        "customers": [
+          "客户来自中国半导体设计和本土硬件链。"
+        ]
+      },
+      "evidence_provenance": [
+        {
+          "source_type": "structured_baseline",
+          "source_name": "company filings",
+          "source_time": "2026-06-23T18:01:34+08:00",
+          "confidence": 0.68
+        },
+        {
+          "source_type": "structured_baseline",
+          "source_name": "Hong Kong market scan",
+          "source_time": "2026-06-23T18:01:34+08:00",
+          "confidence": 0.68
+        },
+        {
+          "source_type": "market_scan",
+          "source_name": "latest_market_scan",
+          "source_time": "2026-06-23T18:01:34+08:00",
+          "confidence": 0.6
+        }
+      ],
+      "risk_notes": [
+        "资本开支周期波动",
+        "地缘政治和出口管制"
+      ]
+    },
+    {
+      "symbol": "VRT",
+      "display_name": "Vertiv（VRT）",
+      "market": "US",
+      "lane": "电力和散热",
+      "action": "重点研究",
+      "score": 0.95,
+      "evidence": {
+        "orders": [
+          "AI 数据中心功耗上升带动电力和散热设备订单。"
+        ],
+        "margin": [
+          "高端数据中心解决方案占比提升时，盈利质量有改善空间。"
+        ],
+        "cashflow": [
+          "项目交付和回款节奏决定自由现金流稳定性。"
+        ],
+        "customers": [
+          "客户集中在数据中心运营商和云厂商。"
+        ]
+      },
+      "evidence_provenance": [
+        {
+          "source_type": "structured_baseline",
+          "source_name": "Vertiv investor relations",
+          "source_time": "2026-06-23T18:01:34+08:00",
+          "confidence": 0.68
+        },
+        {
+          "source_type": "market_scan",
+          "source_name": "latest_market_scan",
+          "source_time": "2026-06-23T18:01:34+08:00",
+          "confidence": 0.6
+        }
+      ],
+      "risk_notes": [
+        "项目交付周期长",
+        "利率和电力监管影响估值"
+      ]
+    },
+    {
+      "symbol": "0522.HK",
+      "display_name": "ASMPT（0522.HK）",
+      "market": "HK",
+      "lane": "先进制程和封装",
+      "action": "重点研究",
+      "score": 0.95,
+      "evidence": {
+        "orders": [
+          "先进封装设备需求受 AI 芯片封装产能扩张带动。"
+        ],
+        "margin": [
+          "设备订单结构改善时，毛利率有修复空间。"
+        ],
+        "cashflow": [
+          "设备交付和订单回款节奏是现金流观察重点。"
+        ],
+        "customers": [
+          "客户覆盖封测厂和半导体制造供应链。"
+        ]
+      },
+      "evidence_provenance": [
+        {
+          "source_type": "structured_baseline",
+          "source_name": "company filings",
+          "source_time": "2026-06-23T18:01:34+08:00",
+          "confidence": 0.68
+        },
+        {
+          "source_type": "structured_baseline",
+          "source_name": "Hong Kong market scan",
+          "source_time": "2026-06-23T18:01:34+08:00",
+          "confidence": 0.68
+        },
+        {
+          "source_type": "market_scan",
+          "source_name": "latest_market_scan",
+          "source_time": "2026-06-23T18:01:34+08:00",
+          "confidence": 0.6
+        }
+      ],
+      "risk_notes": [
+        "资本开支周期波动",
+        "地缘政治和出口管制"
+      ]
+    },
+    {
+      "symbol": "ASML",
+      "display_name": "阿斯麦（ASML）",
+      "market": "US",
+      "lane": "先进制程和封装",
+      "action": "观察",
+      "score": 0.52,
+      "evidence": {
+        "orders": [],
+        "margin": [],
+        "cashflow": [],
+        "customers": []
+      },
+      "evidence_provenance": [
+        {
+          "source_type": "market_scan",
+          "source_name": "latest_market_scan",
+          "source_time": "2026-06-23T18:01:34+08:00",
+          "confidence": 0.6
+        }
+      ],
+      "risk_notes": [
+        "资本开支周期波动",
+        "地缘政治和出口管制"
+      ]
+    },
+    {
+      "symbol": "MRVL",
+      "display_name": "迈威尔科技（MRVL）",
+      "market": "US",
+      "lane": "算力芯片",
+      "action": "观察",
+      "score": 0.52,
+      "evidence": {
+        "orders": [],
+        "margin": [],
+        "cashflow": [],
+        "customers": []
+      },
+      "evidence_provenance": [
+        {
+          "source_type": "market_scan",
+          "source_name": "latest_market_scan",
+          "source_time": "2026-06-23T18:01:34+08:00",
+          "confidence": 0.6
+        }
+      ],
+      "risk_notes": [
+        "出口限制可能改变订单节奏",
+        "客户集中度高"
+      ]
+    },
+    {
+      "symbol": "AMD",
+      "display_name": "超威半导体（AMD）",
+      "market": "US",
+      "lane": "算力芯片",
+      "action": "观察",
+      "score": 0.52,
+      "evidence": {
+        "orders": [],
+        "margin": [],
+        "cashflow": [],
+        "customers": []
+      },
+      "evidence_provenance": [
+        {
+          "source_type": "market_scan",
+          "source_name": "latest_market_scan",
+          "source_time": "2026-06-23T18:01:34+08:00",
+          "confidence": 0.6
+        }
+      ],
+      "risk_notes": [
+        "出口限制可能改变订单节奏",
+        "客户集中度高"
+      ]
+    },
+    {
+      "symbol": "WDC",
+      "display_name": "西部数据（WDC）",
+      "market": "US",
+      "lane": "HBM 和存储",
+      "action": "观察",
+      "score": 0.52,
+      "evidence": {
+        "orders": [],
+        "margin": [],
+        "cashflow": [],
+        "customers": []
+      },
+      "evidence_provenance": [
+        {
+          "source_type": "market_scan",
+          "source_name": "latest_market_scan",
+          "source_time": "2026-06-23T18:01:34+08:00",
+          "confidence": 0.6
+        }
+      ],
+      "risk_notes": [
+        "存储周期反转会压缩毛利",
+        "扩产过快可能带来价格压力"
+      ]
+    },
+    {
+      "symbol": "KLAC",
+      "display_name": "科磊（KLAC）",
+      "market": "US",
+      "lane": "先进制程和封装",
+      "action": "观察",
+      "score": 0.52,
+      "evidence": {
+        "orders": [],
+        "margin": [],
+        "cashflow": [],
+        "customers": []
+      },
+      "evidence_provenance": [
+        {
+          "source_type": "market_scan",
+          "source_name": "latest_market_scan",
+          "source_time": "2026-06-23T18:01:34+08:00",
+          "confidence": 0.6
+        }
+      ],
+      "risk_notes": [
+        "资本开支周期波动",
+        "地缘政治和出口管制"
+      ]
+    }
+  ],
+  "watch_targets": [
+    {
+      "symbol": "LRCX",
+      "display_name": "泛林集团（LRCX）",
+      "market": "US",
+      "lane": "先进制程和封装",
+      "action": "观察",
+      "score": 0.52,
+      "evidence": {
+        "orders": [],
+        "margin": [],
+        "cashflow": [],
+        "customers": []
+      },
+      "evidence_provenance": [
+        {
+          "source_type": "market_scan",
+          "source_name": "latest_market_scan",
+          "source_time": "2026-06-23T18:01:34+08:00",
+          "confidence": 0.6
+        }
+      ],
+      "risk_notes": [
+        "资本开支周期波动",
+        "地缘政治和出口管制"
+      ]
+    },
+    {
+      "symbol": "AMAT",
+      "display_name": "应用材料（AMAT）",
+      "market": "US",
+      "lane": "先进制程和封装",
+      "action": "观察",
+      "score": 0.52,
+      "evidence": {
+        "orders": [],
+        "margin": [],
+        "cashflow": [],
+        "customers": []
+      },
+      "evidence_provenance": [
+        {
+          "source_type": "market_scan",
+          "source_name": "latest_market_scan",
+          "source_time": "2026-06-23T18:01:34+08:00",
+          "confidence": 0.6
+        }
+      ],
+      "risk_notes": [
+        "资本开支周期波动",
+        "地缘政治和出口管制"
+      ]
+    },
+    {
+      "symbol": "STX",
+      "display_name": "希捷科技（STX）",
+      "market": "US",
+      "lane": "HBM 和存储",
+      "action": "观察",
+      "score": 0.52,
+      "evidence": {
+        "orders": [],
+        "margin": [],
+        "cashflow": [],
+        "customers": []
+      },
+      "evidence_provenance": [
+        {
+          "source_type": "market_scan",
+          "source_name": "latest_market_scan",
+          "source_time": "2026-06-23T18:01:34+08:00",
+          "confidence": 0.6
+        }
+      ],
+      "risk_notes": [
+        "存储周期反转会压缩毛利",
+        "扩产过快可能带来价格压力"
+      ]
+    },
+    {
+      "symbol": "1347.HK",
+      "display_name": "华虹半导体（1347.HK）",
+      "market": "HK",
+      "lane": "先进制程和封装",
+      "action": "观察",
+      "score": 0.52,
+      "evidence": {
+        "orders": [],
+        "margin": [],
+        "cashflow": [],
+        "customers": []
+      },
+      "evidence_provenance": [
+        {
+          "source_type": "market_scan",
+          "source_name": "latest_market_scan",
+          "source_time": "2026-06-23T18:01:34+08:00",
+          "confidence": 0.6
+        }
+      ],
+      "risk_notes": [
+        "资本开支周期波动",
+        "地缘政治和出口管制"
+      ]
+    },
+    {
+      "symbol": "ARM",
+      "display_name": "Arm（ARM）",
+      "market": "US",
+      "lane": "算力芯片",
+      "action": "观察",
+      "score": 0.52,
+      "evidence": {
+        "orders": [],
+        "margin": [],
+        "cashflow": [],
+        "customers": []
+      },
+      "evidence_provenance": [
+        {
+          "source_type": "market_scan",
+          "source_name": "latest_market_scan",
+          "source_time": "2026-06-23T18:01:34+08:00",
+          "confidence": 0.6
+        }
+      ],
+      "risk_notes": [
+        "出口限制可能改变订单节奏",
+        "客户集中度高"
+      ]
+    },
+    {
+      "symbol": "GOOGL",
+      "display_name": "谷歌（GOOGL）",
+      "market": "US",
+      "lane": "AI 软件和数据",
+      "action": "观察",
+      "score": 0.48,
+      "evidence": {
+        "orders": [],
+        "margin": [],
+        "cashflow": [],
+        "customers": []
+      },
+      "evidence_provenance": [
+        {
+          "source_type": "market_scan",
+          "source_name": "latest_market_scan",
+          "source_time": "2026-06-23T18:01:34+08:00",
+          "confidence": 0.6
+        }
+      ],
+      "risk_notes": [
+        "竞争加剧",
+        "客户试点转正式采购仍需验证"
+      ]
+    },
+    {
+      "symbol": "2382.HK",
+      "display_name": "舜宇光学（2382.HK）",
+      "market": "HK",
+      "lane": "网络和光通信",
+      "action": "观察",
+      "score": 0.48,
+      "evidence": {
+        "orders": [],
+        "margin": [],
+        "cashflow": [],
+        "customers": []
+      },
+      "evidence_provenance": [
+        {
+          "source_type": "market_scan",
+          "source_name": "latest_market_scan",
+          "source_time": "2026-06-23T18:01:34+08:00",
+          "confidence": 0.6
+        }
+      ],
+      "risk_notes": [
+        "客户采购节奏波动",
+        "单一大客户订单变化会放大股价波动"
+      ]
+    },
+    {
+      "symbol": "LI",
+      "display_name": "理想汽车（LI）",
+      "market": "US",
+      "lane": "新能源和供电链",
+      "action": "观察",
+      "score": 0.48,
+      "evidence": {
+        "orders": [],
+        "margin": [],
+        "cashflow": [],
+        "customers": []
+      },
+      "evidence_provenance": [
+        {
+          "source_type": "market_scan",
+          "source_name": "latest_market_scan",
+          "source_time": "2026-06-23T18:01:34+08:00",
+          "confidence": 0.6
+        }
+      ],
+      "risk_notes": [
+        "新能源车价格战",
+        "锂电材料价格周期"
+      ]
+    },
+    {
+      "symbol": "TSLA",
+      "display_name": "特斯拉（TSLA）",
+      "market": "US",
+      "lane": "新能源和供电链",
+      "action": "观察",
+      "score": 0.48,
+      "evidence": {
+        "orders": [],
+        "margin": [],
+        "cashflow": [],
+        "customers": []
+      },
+      "evidence_provenance": [
+        {
+          "source_type": "market_scan",
+          "source_name": "latest_market_scan",
+          "source_time": "2026-06-23T18:01:34+08:00",
+          "confidence": 0.6
+        }
+      ],
+      "risk_notes": [
+        "新能源车价格战",
+        "锂电材料价格周期"
+      ]
+    },
+    {
+      "symbol": "1211.HK",
+      "display_name": "比亚迪股份（1211.HK）",
+      "market": "HK",
+      "lane": "新能源和供电链",
+      "action": "观察",
+      "score": 0.48,
+      "evidence": {
+        "orders": [],
+        "margin": [],
+        "cashflow": [],
+        "customers": []
+      },
+      "evidence_provenance": [
+        {
+          "source_type": "market_scan",
+          "source_name": "latest_market_scan",
+          "source_time": "2026-06-23T18:01:34+08:00",
+          "confidence": 0.6
+        }
+      ],
+      "risk_notes": [
+        "新能源车价格战",
+        "锂电材料价格周期"
+      ]
+    },
+    {
+      "symbol": "XPEV",
+      "display_name": "小鹏汽车（XPEV）",
+      "market": "US",
+      "lane": "新能源和供电链",
+      "action": "观察",
+      "score": 0.48,
+      "evidence": {
+        "orders": [],
+        "margin": [],
+        "cashflow": [],
+        "customers": []
+      },
+      "evidence_provenance": [
+        {
+          "source_type": "market_scan",
+          "source_name": "latest_market_scan",
+          "source_time": "2026-06-23T18:01:34+08:00",
+          "confidence": 0.6
+        }
+      ],
+      "risk_notes": [
+        "新能源车价格战",
+        "锂电材料价格周期"
+      ]
+    },
+    {
+      "symbol": "ETN",
+      "display_name": "伊顿（ETN）",
+      "market": "US",
+      "lane": "电力和散热",
+      "action": "观察",
+      "score": 0.48,
+      "evidence": {
+        "orders": [],
+        "margin": [],
+        "cashflow": [],
+        "customers": []
+      },
+      "evidence_provenance": [
+        {
+          "source_type": "market_scan",
+          "source_name": "latest_market_scan",
+          "source_time": "2026-06-23T18:01:34+08:00",
+          "confidence": 0.6
+        }
+      ],
+      "risk_notes": [
+        "项目交付周期长",
+        "利率和电力监管影响估值"
+      ]
+    },
+    {
+      "symbol": "3931.HK",
+      "display_name": "中创新航（3931.HK）",
+      "market": "HK",
+      "lane": "新能源和供电链",
+      "action": "观察",
+      "score": 0.48,
+      "evidence": {
+        "orders": [],
+        "margin": [],
+        "cashflow": [],
+        "customers": []
+      },
+      "evidence_provenance": [
+        {
+          "source_type": "market_scan",
+          "source_name": "latest_market_scan",
+          "source_time": "2026-06-23T18:01:34+08:00",
+          "confidence": 0.6
+        }
+      ],
+      "risk_notes": [
+        "新能源车价格战",
+        "锂电材料价格周期"
+      ]
+    },
+    {
+      "symbol": "NVT",
+      "display_name": "nVent（NVT）",
+      "market": "US",
+      "lane": "电力和散热",
+      "action": "观察",
+      "score": 0.48,
+      "evidence": {
+        "orders": [],
+        "margin": [],
+        "cashflow": [],
+        "customers": []
+      },
+      "evidence_provenance": [
+        {
+          "source_type": "market_scan",
+          "source_name": "latest_market_scan",
+          "source_time": "2026-06-23T18:01:34+08:00",
+          "confidence": 0.6
+        }
+      ],
+      "risk_notes": [
+        "项目交付周期长",
+        "利率和电力监管影响估值"
+      ]
+    },
+    {
+      "symbol": "VST",
+      "display_name": "Vistra（VST）",
+      "market": "US",
+      "lane": "电力和散热",
+      "action": "观察",
+      "score": 0.48,
+      "evidence": {
+        "orders": [],
+        "margin": [],
+        "cashflow": [],
+        "customers": []
+      },
+      "evidence_provenance": [
+        {
+          "source_type": "market_scan",
+          "source_name": "latest_market_scan",
+          "source_time": "2026-06-23T18:01:34+08:00",
+          "confidence": 0.6
+        }
+      ],
+      "risk_notes": [
+        "项目交付周期长",
+        "利率和电力监管影响估值"
+      ]
+    },
+    {
+      "symbol": "SNOW",
+      "display_name": "Snowflake（SNOW）",
+      "market": "US",
+      "lane": "AI 软件和数据",
+      "action": "观察",
+      "score": 0.48,
+      "evidence": {
+        "orders": [],
+        "margin": [],
+        "cashflow": [],
+        "customers": []
+      },
+      "evidence_provenance": [
+        {
+          "source_type": "market_scan",
+          "source_name": "latest_market_scan",
+          "source_time": "2026-06-23T18:01:34+08:00",
+          "confidence": 0.6
+        }
+      ],
+      "risk_notes": [
+        "竞争加剧",
+        "客户试点转正式采购仍需验证"
+      ]
+    },
+    {
+      "symbol": "RIVN",
+      "display_name": "Rivian（RIVN）",
+      "market": "US",
+      "lane": "新能源和供电链",
+      "action": "观察",
+      "score": 0.48,
+      "evidence": {
+        "orders": [],
+        "margin": [],
+        "cashflow": [],
+        "customers": []
+      },
+      "evidence_provenance": [
+        {
+          "source_type": "market_scan",
+          "source_name": "latest_market_scan",
+          "source_time": "2026-06-23T18:01:34+08:00",
+          "confidence": 0.6
+        }
+      ],
+      "risk_notes": [
+        "新能源车价格战",
+        "锂电材料价格周期"
+      ]
+    },
+    {
+      "symbol": "PWR",
+      "display_name": "Quanta Services（PWR）",
+      "market": "US",
+      "lane": "电力和散热",
+      "action": "观察",
+      "score": 0.48,
+      "evidence": {
+        "orders": [],
+        "margin": [],
+        "cashflow": [],
+        "customers": []
+      },
+      "evidence_provenance": [
+        {
+          "source_type": "market_scan",
+          "source_name": "latest_market_scan",
+          "source_time": "2026-06-23T18:01:34+08:00",
+          "confidence": 0.6
+        }
+      ],
+      "risk_notes": [
+        "项目交付周期长",
+        "利率和电力监管影响估值"
+      ]
+    },
+    {
+      "symbol": "PLTR",
+      "display_name": "Palantir（PLTR）",
+      "market": "US",
+      "lane": "AI 软件和数据",
+      "action": "观察",
+      "score": 0.48,
+      "evidence": {
+        "orders": [],
+        "margin": [],
+        "cashflow": [],
+        "customers": []
+      },
+      "evidence_provenance": [
+        {
+          "source_type": "market_scan",
+          "source_name": "latest_market_scan",
+          "source_time": "2026-06-23T18:01:34+08:00",
+          "confidence": 0.6
+        }
+      ],
+      "risk_notes": [
+        "竞争加剧",
+        "客户试点转正式采购仍需验证"
+      ]
+    },
+    {
+      "symbol": "LITE",
+      "display_name": "Lumentum（LITE）",
+      "market": "US",
+      "lane": "网络和光通信",
+      "action": "观察",
+      "score": 0.48,
+      "evidence": {
+        "orders": [],
+        "margin": [],
+        "cashflow": [],
+        "customers": []
+      },
+      "evidence_provenance": [
+        {
+          "source_type": "market_scan",
+          "source_name": "latest_market_scan",
+          "source_time": "2026-06-23T18:01:34+08:00",
+          "confidence": 0.6
+        }
+      ],
+      "risk_notes": [
+        "客户采购节奏波动",
+        "单一大客户订单变化会放大股价波动"
+      ]
+    },
+    {
+      "symbol": "GEV",
+      "display_name": "GE Vernova（GEV）",
+      "market": "US",
+      "lane": "电力和散热",
+      "action": "观察",
+      "score": 0.48,
+      "evidence": {
+        "orders": [],
+        "margin": [],
+        "cashflow": [],
+        "customers": []
+      },
+      "evidence_provenance": [
+        {
+          "source_type": "market_scan",
+          "source_name": "latest_market_scan",
+          "source_time": "2026-06-23T18:01:34+08:00",
+          "confidence": 0.6
+        }
+      ],
+      "risk_notes": [
+        "项目交付周期长",
+        "利率和电力监管影响估值"
+      ]
+    },
+    {
+      "symbol": "DDOG",
+      "display_name": "Datadog（DDOG）",
+      "market": "US",
+      "lane": "AI 软件和数据",
+      "action": "观察",
+      "score": 0.48,
+      "evidence": {
+        "orders": [],
+        "margin": [],
+        "cashflow": [],
+        "customers": []
+      },
+      "evidence_provenance": [
+        {
+          "source_type": "market_scan",
+          "source_name": "latest_market_scan",
+          "source_time": "2026-06-23T18:01:34+08:00",
+          "confidence": 0.6
+        }
+      ],
+      "risk_notes": [
+        "竞争加剧",
+        "客户试点转正式采购仍需验证"
+      ]
+    },
+    {
+      "symbol": "CEG",
+      "display_name": "Constellation Energy（CEG）",
+      "market": "US",
+      "lane": "电力和散热",
+      "action": "观察",
+      "score": 0.48,
+      "evidence": {
+        "orders": [],
+        "margin": [],
+        "cashflow": [],
+        "customers": []
+      },
+      "evidence_provenance": [
+        {
+          "source_type": "market_scan",
+          "source_name": "latest_market_scan",
+          "source_time": "2026-06-23T18:01:34+08:00",
+          "confidence": 0.6
+        }
+      ],
+      "risk_notes": [
+        "项目交付周期长",
+        "利率和电力监管影响估值"
+      ]
+    },
+    {
+      "symbol": "COHR",
+      "display_name": "Coherent（COHR）",
+      "market": "US",
+      "lane": "网络和光通信",
+      "action": "观察",
+      "score": 0.48,
+      "evidence": {
+        "orders": [],
+        "margin": [],
+        "cashflow": [],
+        "customers": []
+      },
+      "evidence_provenance": [
+        {
+          "source_type": "market_scan",
+          "source_name": "latest_market_scan",
+          "source_time": "2026-06-23T18:01:34+08:00",
+          "confidence": 0.6
+        }
+      ],
+      "risk_notes": [
+        "客户采购节奏波动",
+        "单一大客户订单变化会放大股价波动"
+      ]
+    }
+  ],
+  "avoid_targets": [
+    {
+      "symbol": "ASML",
+      "display_name": "阿斯麦（ASML）",
+      "market": "US",
+      "lane": "先进制程和封装",
+      "action": "观察",
+      "score": 0.52,
+      "evidence": {
+        "orders": [],
+        "margin": [],
+        "cashflow": [],
+        "customers": []
+      },
+      "evidence_provenance": [
+        {
+          "source_type": "market_scan",
+          "source_name": "latest_market_scan",
+          "source_time": "2026-06-23T18:01:34+08:00",
+          "confidence": 0.6
+        }
+      ],
+      "risk_notes": [
+        "资本开支周期波动",
+        "地缘政治和出口管制"
+      ]
+    },
+    {
+      "symbol": "MRVL",
+      "display_name": "迈威尔科技（MRVL）",
+      "market": "US",
+      "lane": "算力芯片",
+      "action": "观察",
+      "score": 0.52,
+      "evidence": {
+        "orders": [],
+        "margin": [],
+        "cashflow": [],
+        "customers": []
+      },
+      "evidence_provenance": [
+        {
+          "source_type": "market_scan",
+          "source_name": "latest_market_scan",
+          "source_time": "2026-06-23T18:01:34+08:00",
+          "confidence": 0.6
+        }
+      ],
+      "risk_notes": [
+        "出口限制可能改变订单节奏",
+        "客户集中度高"
+      ]
+    },
+    {
+      "symbol": "AMD",
+      "display_name": "超威半导体（AMD）",
+      "market": "US",
+      "lane": "算力芯片",
+      "action": "观察",
+      "score": 0.52,
+      "evidence": {
+        "orders": [],
+        "margin": [],
+        "cashflow": [],
+        "customers": []
+      },
+      "evidence_provenance": [
+        {
+          "source_type": "market_scan",
+          "source_name": "latest_market_scan",
+          "source_time": "2026-06-23T18:01:34+08:00",
+          "confidence": 0.6
+        }
+      ],
+      "risk_notes": [
+        "出口限制可能改变订单节奏",
+        "客户集中度高"
+      ]
+    },
+    {
+      "symbol": "WDC",
+      "display_name": "西部数据（WDC）",
+      "market": "US",
+      "lane": "HBM 和存储",
+      "action": "观察",
+      "score": 0.52,
+      "evidence": {
+        "orders": [],
+        "margin": [],
+        "cashflow": [],
+        "customers": []
+      },
+      "evidence_provenance": [
+        {
+          "source_type": "market_scan",
+          "source_name": "latest_market_scan",
+          "source_time": "2026-06-23T18:01:34+08:00",
+          "confidence": 0.6
+        }
+      ],
+      "risk_notes": [
+        "存储周期反转会压缩毛利",
+        "扩产过快可能带来价格压力"
+      ]
+    },
+    {
+      "symbol": "KLAC",
+      "display_name": "科磊（KLAC）",
+      "market": "US",
+      "lane": "先进制程和封装",
+      "action": "观察",
+      "score": 0.52,
+      "evidence": {
+        "orders": [],
+        "margin": [],
+        "cashflow": [],
+        "customers": []
+      },
+      "evidence_provenance": [
+        {
+          "source_type": "market_scan",
+          "source_name": "latest_market_scan",
+          "source_time": "2026-06-23T18:01:34+08:00",
+          "confidence": 0.6
+        }
+      ],
+      "risk_notes": [
+        "资本开支周期波动",
+        "地缘政治和出口管制"
+      ]
+    },
+    {
+      "symbol": "LRCX",
+      "display_name": "泛林集团（LRCX）",
+      "market": "US",
+      "lane": "先进制程和封装",
+      "action": "观察",
+      "score": 0.52,
+      "evidence": {
+        "orders": [],
+        "margin": [],
+        "cashflow": [],
+        "customers": []
+      },
+      "evidence_provenance": [
+        {
+          "source_type": "market_scan",
+          "source_name": "latest_market_scan",
+          "source_time": "2026-06-23T18:01:34+08:00",
+          "confidence": 0.6
+        }
+      ],
+      "risk_notes": [
+        "资本开支周期波动",
+        "地缘政治和出口管制"
+      ]
+    },
+    {
+      "symbol": "AMAT",
+      "display_name": "应用材料（AMAT）",
+      "market": "US",
+      "lane": "先进制程和封装",
+      "action": "观察",
+      "score": 0.52,
+      "evidence": {
+        "orders": [],
+        "margin": [],
+        "cashflow": [],
+        "customers": []
+      },
+      "evidence_provenance": [
+        {
+          "source_type": "market_scan",
+          "source_name": "latest_market_scan",
+          "source_time": "2026-06-23T18:01:34+08:00",
+          "confidence": 0.6
+        }
+      ],
+      "risk_notes": [
+        "资本开支周期波动",
+        "地缘政治和出口管制"
+      ]
+    },
+    {
+      "symbol": "STX",
+      "display_name": "希捷科技（STX）",
+      "market": "US",
+      "lane": "HBM 和存储",
+      "action": "观察",
+      "score": 0.52,
+      "evidence": {
+        "orders": [],
+        "margin": [],
+        "cashflow": [],
+        "customers": []
+      },
+      "evidence_provenance": [
+        {
+          "source_type": "market_scan",
+          "source_name": "latest_market_scan",
+          "source_time": "2026-06-23T18:01:34+08:00",
+          "confidence": 0.6
+        }
+      ],
+      "risk_notes": [
+        "存储周期反转会压缩毛利",
+        "扩产过快可能带来价格压力"
+      ]
+    }
+  ],
+  "health_notes": [],
+  "json_path": "/Users/bingzhang/clawd/myclaw-repo/data/world_model/ai_bottleneck_research/ai_bottleneck_research_20260623_180134.json",
+  "latest_path": "/Users/bingzhang/clawd/myclaw-repo/data/world_model/ai_bottleneck_research/latest.json"
+}

@@ -80,6 +80,12 @@ python3 tools/report_audit.py verdict --results '<json-results>'
 
 If a validation tool reports a material discrepancy, investigate and document the discrepancy before continuing analysis.
 
+## OpenClaw Export Boundary
+
+When adapting a report for OpenClaw, generate AI Berkshire export artifacts with `tools/openclaw_export.py`. The default output is `data/openclaw_exports/`.
+
+Do not write into `/Users/bingzhang/clawd/myclaw-repo/data/world_model` from this repository. OpenClaw owns import, health checks, daily investment committee inclusion, degraded state, briefing, and delivery.
+
 ## Git And Output Hygiene
 
 - Remote repository: `https://github.com/xbtlin/ai-berkshire.git`.

@@ -1,0 +1,1497 @@
+{
+  "generated_at": "2026-06-23T18:02:23+08:00",
+  "status": "healthy",
+  "coverage": {
+    "universe_size": 26,
+    "selected_universe_size": 10,
+    "analyzed_count": 8,
+    "max_companies": 8,
+    "source_counts": {
+      "local_calendar": 0,
+      "longbridge_calendar": 5,
+      "longbridge": 5,
+      "longbridge_financials": 10,
+      "longbridge_consensus": 10,
+      "yfinance_ok": 10
+    },
+    "evidence_rows": 8,
+    "missing_source_notes": []
+  },
+  "market_thesis": "财报季重点不是看全部公司，而是看 AI 算力、半导体、电力基础设施、互联网平台和新能源车这些主线公司的业绩是否兑现。",
+  "selection_reason": "本轮只选择对未来 1-4 周市场方向最有影响的 20 家以内公司，优先看 Longbridge 财报日历、公告、结构化财务数据和一致预期，再用市场反应做验证。",
+  "source_health": {
+    "status": "healthy",
+    "local_calendar_events": 0,
+    "longbridge_calendar_events": 5,
+    "longbridge_events": 5,
+    "yfinance_ok": 10,
+    "rows_with_provenance": 8,
+    "notes": []
+  },
+  "analyzed_targets": [
+    {
+      "symbol": "0981.HK",
+      "display_name": "中芯国际（0981.HK）",
+      "market": "HK",
+      "lane": "先进制程",
+      "earnings_event": {
+        "date": "2026-06-03",
+        "source": "longbridge_filing",
+        "title": "FORM OF PROXY FOR USE AT THE ANNUAL GENERAL MEETINGTO BE HELD ON 26 JUNE 2026",
+        "url": "https://pub.lbkrs.com/news-notices/hk/833820899611.PDF",
+        "raw": {
+          "count": 2,
+          "date": "2026-03-26",
+          "infos": [
+            {
+              "activity_type": "",
+              "chart_uid": "",
+              "content": "2025 财年年报业绩披露",
+              "counter_id": "ST/HK/981",
+              "counter_name": "中芯国际",
+              "currency": "HKD",
+              "data_kv": [
+                {
+                  "key": "",
+                  "type": "estimate_eps",
+                  "value": "0.7046",
+                  "value_raw": "0.704692"
+                },
+                {
+                  "key": "",
+                  "type": "estimate_revenue",
+                  "value": "723 亿",
+                  "value_raw": "72343418549.191380"
+                },
+                {
+                  "key": "",
+                  "type": "actual_eps",
+                  "value": "0.6223",
+                  "value_raw": "0.622382"
+                },
+                {
+                  "key": "",
+                  "type": "actual_revenue",
+                  "value": "758 亿",
+                  "value_raw": "75780792682.557480"
+                }
+              ],
+              "date": "2026.03.26",
+              "date_type": "盘后",
+              "datetime": "1774483200",
+              "ext": {
+                "financial_report": {
+                  "fiscal_year": "2025",
+                  "period": "4",
+                  "period_type": "af"
+                }
+              },
+              "financial_market_time": "",
+              "icon": "https://assets.lbkrs.com/ticker/ST/HK/981.png",
+              "id": "733757",
+              "live": null,
+              "market": "HK",
+              "source_type": 0,
+              "star": 0,
+              "type": "financial"
+            }
+          ]
+        }
+      },
+      "impact_score": 70.0,
+      "evidence": {
+        "revenue_profit_surprise": "Longbridge 财报最新值显示，营收同比 +12.3%，净利润同比 +5.8%，营业利润同比 -19.4%。 Longbridge 一致预期对比显示，营收相对预期 +3.7%。 Longbridge 一致预期对比显示，每股收益相对预期 -26.8%。",
+        "guidance": "",
+        "gross_margin": "毛利率约 +20.1%。",
+        "orders_backlog": ""
+      },
+      "post_earnings_reaction": {
+        "price_change_45d": 31.17
+      },
+      "action_label": "继续观察",
+      "one_to_four_week_view": "震荡",
+      "why": "已有部分正面证据，但还缺少指引、订单或利润质量的进一步确认。",
+      "risk": "如果财报后的资金承接不足，或者指引和订单没有跟上，短期走势可能转弱。",
+      "missing_evidence": [
+        "下季度或全年指引",
+        "订单、积压订单或客户需求"
+      ],
+      "evidence_provenance": [
+        {
+          "source": "Longbridge 财报日历",
+          "detail": "2025 财年年报业绩披露",
+          "url": ""
+        },
+        {
+          "source": "Longbridge 公告",
+          "detail": "FORM OF PROXY FOR USE AT THE ANNUAL GENERAL MEETINGTO BE HELD ON 26 JUNE 2026",
+          "url": "https://pub.lbkrs.com/news-notices/hk/833820899611.PDF"
+        },
+        {
+          "source": "Longbridge 财务报表",
+          "detail": "最新财报核心指标",
+          "url": ""
+        },
+        {
+          "source": "Longbridge 财务报表",
+          "detail": "最新毛利率",
+          "url": ""
+        },
+        {
+          "source": "Longbridge 一致预期",
+          "detail": "营收预期对比",
+          "url": ""
+        },
+        {
+          "source": "Longbridge 一致预期",
+          "detail": "每股收益预期对比",
+          "url": ""
+        }
+      ]
+    },
+    {
+      "symbol": "TSM",
+      "display_name": "台积电（TSM）",
+      "market": "US",
+      "lane": "先进制程",
+      "earnings_event": {
+        "date": "2026-06-10",
+        "source": "longbridge_filing",
+        "title": "6-K - TAIWAN SEMICONDUCTOR MANUFACTURING CO LTD (0001046179) (Filer)",
+        "url": "https://www.sec.gov/Archives/edgar/data/1046179/000104617926000367/tsm-revenue20260610.htm"
+      },
+      "impact_score": 59.84,
+      "evidence": {
+        "revenue_profit_surprise": "Longbridge 财报最新值显示，营收同比 +40.1%，净利润同比 +64.2%，营业利润同比 +67.9%。 Longbridge 一致预期对比显示，营收相对预期 +1.1%。 Longbridge 一致预期对比显示，每股收益相对预期 +4.6%。",
+        "guidance": "",
+        "gross_margin": "毛利率约 +66.2%。",
+        "orders_backlog": ""
+      },
+      "post_earnings_reaction": {
+        "price_change_45d": 26.52
+      },
+      "action_label": "重点关注",
+      "one_to_four_week_view": "偏强",
+      "why": "财报证据、产业链重要性和市场反应同时偏强，适合列入未来 1-4 周重点跟踪。",
+      "risk": "如果财报后的资金承接不足，或者指引和订单没有跟上，短期走势可能转弱。",
+      "missing_evidence": [
+        "下季度或全年指引",
+        "订单、积压订单或客户需求"
+      ],
+      "evidence_provenance": [
+        {
+          "source": "Longbridge 公告",
+          "detail": "6-K - TAIWAN SEMICONDUCTOR MANUFACTURING CO LTD (0001046179) (Filer)",
+          "url": "https://www.sec.gov/Archives/edgar/data/1046179/000104617926000367/tsm-revenue20260610.htm"
+        },
+        {
+          "source": "Longbridge 财务报表",
+          "detail": "最新财报核心指标",
+          "url": ""
+        },
+        {
+          "source": "Longbridge 财务报表",
+          "detail": "最新毛利率",
+          "url": ""
+        },
+        {
+          "source": "Longbridge 一致预期",
+          "detail": "营收预期对比",
+          "url": ""
+        },
+        {
+          "source": "Longbridge 一致预期",
+          "detail": "每股收益预期对比",
+          "url": ""
+        }
+      ]
+    },
+    {
+      "symbol": "0522.HK",
+      "display_name": "ASMPT（0522.HK）",
+      "market": "HK",
+      "lane": "半导体设备",
+      "earnings_event": {
+        "date": "2026-04-21",
+        "source": "longbridge_calendar",
+        "title": "2026 财年第 1 季度业绩披露",
+        "url": "",
+        "raw": {
+          "count": 2,
+          "date": "2026-04-21",
+          "infos": [
+            {
+              "activity_type": "",
+              "chart_uid": "",
+              "content": "2026 财年第 1 季度业绩披露",
+              "counter_id": "ST/HK/522",
+              "counter_name": "ASMPT",
+              "currency": "HKD",
+              "data_kv": [
+                {
+                  "key": "",
+                  "type": "estimate_eps",
+                  "value": "0.5602",
+                  "value_raw": "0.560240"
+                },
+                {
+                  "key": "",
+                  "type": "estimate_revenue",
+                  "value": "38.83 亿",
+                  "value_raw": "3882796480.000000"
+                },
+                {
+                  "key": "",
+                  "type": "actual_eps",
+                  "value": "0.61",
+                  "value_raw": "0.610000"
+                },
+                {
+                  "key": "",
+                  "type": "actual_revenue",
+                  "value": "39.67 亿",
+                  "value_raw": "3966800000.000000"
+                }
+              ],
+              "date": "2026.04.21",
+              "date_type": "盘后",
+              "datetime": "1776729600",
+              "ext": {
+                "financial_report": {
+                  "fiscal_year": "2026",
+                  "period": "1",
+                  "period_type": "qf"
+                }
+              },
+              "financial_market_time": "",
+              "icon": "https://assets.lbkrs.com/ticker/ST/HK/522.png",
+              "id": "744704",
+              "live": null,
+              "market": "HK",
+              "source_type": 0,
+              "star": 0,
+              "type": "financial"
+            }
+          ]
+        }
+      },
+      "impact_score": 53.0,
+      "evidence": {
+        "revenue_profit_surprise": "Longbridge 财报最新值显示，营收同比 +26.9%，净利润同比 +203.5%，营业利润同比 +140.8%。 Longbridge 一致预期对比显示，营收相对预期 +2.2%。 Longbridge 一致预期对比显示，每股收益相对预期 +8.9%。",
+        "guidance": "",
+        "gross_margin": "毛利率约 +39.5%。",
+        "orders_backlog": ""
+      },
+      "post_earnings_reaction": {
+        "price_change_45d": 41.91
+      },
+      "action_label": "重点关注",
+      "one_to_four_week_view": "偏强",
+      "why": "财报证据、产业链重要性和市场反应同时偏强，适合列入未来 1-4 周重点跟踪。",
+      "risk": "如果财报后的资金承接不足，或者指引和订单没有跟上，短期走势可能转弱。",
+      "missing_evidence": [
+        "下季度或全年指引",
+        "订单、积压订单或客户需求"
+      ],
+      "evidence_provenance": [
+        {
+          "source": "Longbridge 财报日历",
+          "detail": "2026 财年第 1 季度业绩披露",
+          "url": ""
+        },
+        {
+          "source": "Longbridge 财务报表",
+          "detail": "最新财报核心指标",
+          "url": ""
+        },
+        {
+          "source": "Longbridge 财务报表",
+          "detail": "最新毛利率",
+          "url": ""
+        },
+        {
+          "source": "Longbridge 一致预期",
+          "detail": "营收预期对比",
+          "url": ""
+        },
+        {
+          "source": "Longbridge 一致预期",
+          "detail": "每股收益预期对比",
+          "url": ""
+        }
+      ]
+    },
+    {
+      "symbol": "1347.HK",
+      "display_name": "华虹半导体（1347.HK）",
+      "market": "HK",
+      "lane": "半导体制造",
+      "earnings_event": {
+        "date": "2026-05-14",
+        "source": "longbridge_calendar",
+        "title": "2026 财年第 1 季度业绩披露",
+        "url": "",
+        "raw": {
+          "count": 2,
+          "date": "2026-05-14",
+          "infos": [
+            {
+              "activity_type": "",
+              "chart_uid": "",
+              "content": "2026 财年第 1 季度业绩披露",
+              "counter_id": "ST/HK/1347",
+              "counter_name": "华虹宏力",
+              "currency": "HKD",
+              "data_kv": [
+                {
+                  "key": "",
+                  "type": "estimate_eps",
+                  "value": "0.1387",
+                  "value_raw": "0.138715"
+                },
+                {
+                  "key": "",
+                  "type": "estimate_revenue",
+                  "value": "51.7 亿",
+                  "value_raw": "5170211911.139102"
+                },
+                {
+                  "key": "",
+                  "type": "actual_eps",
+                  "value": "0.094",
+                  "value_raw": "0.094044"
+                },
+                {
+                  "key": "",
+                  "type": "actual_revenue",
+                  "value": "53.38 亿",
+                  "value_raw": "5337799907.806802"
+                }
+              ],
+              "date": "2026.05.14",
+              "date_type": "盘后",
+              "datetime": "1778716800",
+              "ext": {
+                "financial_report": {
+                  "fiscal_year": "2026",
+                  "period": "1",
+                  "period_type": "qf"
+                }
+              },
+              "financial_market_time": "",
+              "icon": "https://assets.lbkrs.com/ticker/ST/HK/1347.png",
+              "id": "760105",
+              "live": {
+                "booked": false,
+                "counter_ids": [
+                  "ST/HK/1347",
+                  "ST/SH/688347"
+                ],
+                "icon": "https://assets.lbctrl.com/uploads/fe952da9-f735-483b-a216-85aed558f783/tg_replay@3x.png",
+                "id": "346067",
+                "name": "华虹半导体（01347.HK，688347.SH）2026 年第一季度业绩说明会",
+                "started_at": "1778749200",
+                "status": 4
+              },
+              "market": "HK",
+              "source_type": 0,
+              "star": 0,
+              "type": "financial"
+            }
+          ]
+        }
+      },
+      "impact_score": 53.0,
+      "evidence": {
+        "revenue_profit_surprise": "Longbridge 财报最新值显示，营收同比 +23.1%，净利润同比 +462.2%，营业利润同比 +58.2%。 Longbridge 一致预期对比显示，营收相对预期 +3.2%。 Longbridge 一致预期对比显示，每股收益相对预期 -32.2%。",
+        "guidance": "",
+        "gross_margin": "毛利率约 +13.0%。",
+        "orders_backlog": ""
+      },
+      "post_earnings_reaction": {
+        "price_change_45d": 83.76
+      },
+      "action_label": "重点关注",
+      "one_to_four_week_view": "偏强",
+      "why": "财报证据、产业链重要性和市场反应同时偏强，适合列入未来 1-4 周重点跟踪。",
+      "risk": "如果财报后的资金承接不足，或者指引和订单没有跟上，短期走势可能转弱。",
+      "missing_evidence": [
+        "下季度或全年指引",
+        "订单、积压订单或客户需求"
+      ],
+      "evidence_provenance": [
+        {
+          "source": "Longbridge 财报日历",
+          "detail": "2026 财年第 1 季度业绩披露",
+          "url": ""
+        },
+        {
+          "source": "Longbridge 财务报表",
+          "detail": "最新财报核心指标",
+          "url": ""
+        },
+        {
+          "source": "Longbridge 财务报表",
+          "detail": "最新毛利率",
+          "url": ""
+        },
+        {
+          "source": "Longbridge 一致预期",
+          "detail": "营收预期对比",
+          "url": ""
+        },
+        {
+          "source": "Longbridge 一致预期",
+          "detail": "每股收益预期对比",
+          "url": ""
+        }
+      ]
+    },
+    {
+      "symbol": "NVDA",
+      "display_name": "英伟达（NVDA）",
+      "market": "US",
+      "lane": "AI 芯片",
+      "earnings_event": {
+        "date": "2026-06-18",
+        "source": "longbridge_filing",
+        "title": "8-K - NVIDIA CORP (0001045810) (Filer)",
+        "url": "https://www.sec.gov/Archives/edgar/data/1045810/000119312526275783/d48176d8k.htm"
+      },
+      "impact_score": 48.19,
+      "evidence": {
+        "revenue_profit_surprise": "Longbridge 财报最新值显示，营收同比 +85.2%，净利润同比 +210.6%，营业利润同比 +147.4%。 Longbridge 一致预期对比显示，营收相对预期 +3.2%。 Longbridge 一致预期对比显示，每股收益相对预期 +37.2%。",
+        "guidance": "",
+        "gross_margin": "毛利率约 +74.9%。",
+        "orders_backlog": ""
+      },
+      "post_earnings_reaction": {
+        "price_change_45d": 3.58
+      },
+      "action_label": "重点关注",
+      "one_to_four_week_view": "偏强",
+      "why": "财报证据、产业链重要性和市场反应同时偏强，适合列入未来 1-4 周重点跟踪。",
+      "risk": "如果财报后的资金承接不足，或者指引和订单没有跟上，短期走势可能转弱。",
+      "missing_evidence": [
+        "下季度或全年指引",
+        "订单、积压订单或客户需求"
+      ],
+      "evidence_provenance": [
+        {
+          "source": "Longbridge 公告",
+          "detail": "8-K - NVIDIA CORP (0001045810) (Filer)",
+          "url": "https://www.sec.gov/Archives/edgar/data/1045810/000119312526275783/d48176d8k.htm"
+        },
+        {
+          "source": "Longbridge 财务报表",
+          "detail": "最新财报核心指标",
+          "url": ""
+        },
+        {
+          "source": "Longbridge 财务报表",
+          "detail": "最新毛利率",
+          "url": ""
+        },
+        {
+          "source": "Longbridge 一致预期",
+          "detail": "营收预期对比",
+          "url": ""
+        },
+        {
+          "source": "Longbridge 一致预期",
+          "detail": "每股收益预期对比",
+          "url": ""
+        }
+      ]
+    },
+    {
+      "symbol": "1211.HK",
+      "display_name": "比亚迪（1211.HK）",
+      "market": "HK",
+      "lane": "新能源车",
+      "earnings_event": {
+        "date": "2026-06-09",
+        "source": "longbridge_filing",
+        "title": "POLL RESULTS OF ANNUAL GENERAL MEETING",
+        "url": "https://pub.lbkrs.com/news-notices/hk/834371325386.PDF",
+        "raw": {
+          "count": 3,
+          "date": "2026-03-27",
+          "infos": [
+            {
+              "activity_type": "",
+              "chart_uid": "",
+              "content": "2025 财年第 4 季度业绩披露",
+              "counter_id": "ST/HK/1211",
+              "counter_name": "比亚迪股份",
+              "currency": "HKD",
+              "data_kv": [
+                {
+                  "key": "",
+                  "type": "estimate_eps",
+                  "value": "1.3566",
+                  "value_raw": "1.356678"
+                },
+                {
+                  "key": "",
+                  "type": "estimate_revenue",
+                  "value": "2730 亿",
+                  "value_raw": "273024363747.254063"
+                },
+                {
+                  "key": "",
+                  "type": "actual_eps",
+                  "value": "1.1342",
+                  "value_raw": "1.134272"
+                },
+                {
+                  "key": "",
+                  "type": "actual_revenue",
+                  "value": "2643 亿",
+                  "value_raw": "264329153015.328680"
+                }
+              ],
+              "date": "2026.03.27",
+              "date_type": "",
+              "datetime": "1774569600",
+              "ext": {
+                "financial_report": {
+                  "fiscal_year": "2025",
+                  "period": "4",
+                  "period_type": "qf"
+                }
+              },
+              "financial_market_time": "",
+              "icon": "https://assets.lbkrs.com/ticker/ST/HK/1211.png",
+              "id": "734490",
+              "live": null,
+              "market": "HK",
+              "source_type": 0,
+              "star": 0,
+              "type": "financial"
+            }
+          ]
+        }
+      },
+      "impact_score": 48.0,
+      "evidence": {
+        "revenue_profit_surprise": "Longbridge 财报最新值显示，营收同比 -6.7%，净利润同比 -52.8%，营业利润同比 -14.4%。 Longbridge 一致预期对比显示，营收相对预期 +5.3%。 Longbridge 一致预期对比显示，每股收益相对预期 -18.6%。",
+        "guidance": "",
+        "gross_margin": "毛利率约 +18.8%。",
+        "orders_backlog": ""
+      },
+      "post_earnings_reaction": {
+        "price_change_45d": -31.59
+      },
+      "action_label": "回避",
+      "one_to_four_week_view": "偏弱",
+      "why": "财报或市场反应偏弱，短期更容易被资金回避。",
+      "risk": "如果财报后的资金承接不足，或者指引和订单没有跟上，短期走势可能转弱。",
+      "missing_evidence": [
+        "下季度或全年指引",
+        "订单、积压订单或客户需求"
+      ],
+      "evidence_provenance": [
+        {
+          "source": "Longbridge 财报日历",
+          "detail": "2025 财年第 4 季度业绩披露",
+          "url": ""
+        },
+        {
+          "source": "Longbridge 公告",
+          "detail": "POLL RESULTS OF ANNUAL GENERAL MEETING",
+          "url": "https://pub.lbkrs.com/news-notices/hk/834371325386.PDF"
+        },
+        {
+          "source": "Longbridge 财务报表",
+          "detail": "最新财报核心指标",
+          "url": ""
+        },
+        {
+          "source": "Longbridge 财务报表",
+          "detail": "最新毛利率",
+          "url": ""
+        },
+        {
+          "source": "Longbridge 一致预期",
+          "detail": "营收预期对比",
+          "url": ""
+        },
+        {
+          "source": "Longbridge 一致预期",
+          "detail": "每股收益预期对比",
+          "url": ""
+        }
+      ]
+    },
+    {
+      "symbol": "AVGO",
+      "display_name": "博通（AVGO）",
+      "market": "US",
+      "lane": "AI 网络芯片",
+      "earnings_event": {
+        "date": "2026-06-18",
+        "source": "longbridge_filing",
+        "title": "8-K - Broadcom Inc. (0001730168) (Filer)",
+        "url": "https://www.sec.gov/Archives/edgar/data/1730168/000119312526275077/d149683d8k.htm"
+      },
+      "impact_score": 43.87,
+      "evidence": {
+        "revenue_profit_surprise": "Longbridge 财报最新值显示，营收同比 +38.7%，净利润同比 +59.1%，营业利润同比 +34.6%。 Longbridge 一致预期对比显示，营收相对预期 +0.5%。 Longbridge 一致预期对比显示，每股收益相对预期 +11.1%。",
+        "guidance": "",
+        "gross_margin": "毛利率约 +75.8%。",
+        "orders_backlog": ""
+      },
+      "post_earnings_reaction": {
+        "price_change_45d": -3.39
+      },
+      "action_label": "重点关注",
+      "one_to_four_week_view": "偏强",
+      "why": "财报证据、产业链重要性和市场反应同时偏强，适合列入未来 1-4 周重点跟踪。",
+      "risk": "如果财报后的资金承接不足，或者指引和订单没有跟上，短期走势可能转弱。",
+      "missing_evidence": [
+        "下季度或全年指引",
+        "订单、积压订单或客户需求"
+      ],
+      "evidence_provenance": [
+        {
+          "source": "Longbridge 公告",
+          "detail": "8-K - Broadcom Inc. (0001730168) (Filer)",
+          "url": "https://www.sec.gov/Archives/edgar/data/1730168/000119312526275077/d149683d8k.htm"
+        },
+        {
+          "source": "Longbridge 财务报表",
+          "detail": "最新财报核心指标",
+          "url": ""
+        },
+        {
+          "source": "Longbridge 财务报表",
+          "detail": "最新毛利率",
+          "url": ""
+        },
+        {
+          "source": "Longbridge 一致预期",
+          "detail": "营收预期对比",
+          "url": ""
+        },
+        {
+          "source": "Longbridge 一致预期",
+          "detail": "每股收益预期对比",
+          "url": ""
+        }
+      ]
+    },
+    {
+      "symbol": "AMD",
+      "display_name": "超威半导体（AMD）",
+      "market": "US",
+      "lane": "AI 芯片",
+      "earnings_event": {
+        "date": "2026-08-04",
+        "source": "yfinance",
+        "title": "公开财报日历"
+      },
+      "impact_score": 40.0,
+      "evidence": {
+        "revenue_profit_surprise": "Longbridge 财报最新值显示，营收同比 +37.9%，净利润同比 +95.1%，营业利润同比 +83.1%。 Longbridge 一致预期对比显示，营收相对预期 +3.4%。 Longbridge 一致预期对比显示，每股收益相对预期 +12.8%。",
+        "guidance": "",
+        "gross_margin": "毛利率约 +55.4%。",
+        "orders_backlog": ""
+      },
+      "post_earnings_reaction": {
+        "price_change_45d": 98.15
+      },
+      "action_label": "重点关注",
+      "one_to_four_week_view": "偏强",
+      "why": "财报证据、产业链重要性和市场反应同时偏强，适合列入未来 1-4 周重点跟踪。",
+      "risk": "如果财报后的资金承接不足，或者指引和订单没有跟上，短期走势可能转弱。",
+      "missing_evidence": [
+        "下季度或全年指引",
+        "订单、积压订单或客户需求"
+      ],
+      "evidence_provenance": [
+        {
+          "source": "Longbridge 财务报表",
+          "detail": "最新财报核心指标",
+          "url": ""
+        },
+        {
+          "source": "Longbridge 财务报表",
+          "detail": "最新毛利率",
+          "url": ""
+        },
+        {
+          "source": "Longbridge 一致预期",
+          "detail": "营收预期对比",
+          "url": ""
+        },
+        {
+          "source": "Longbridge 一致预期",
+          "detail": "每股收益预期对比",
+          "url": ""
+        }
+      ]
+    }
+  ],
+  "top_targets": [
+    {
+      "symbol": "TSM",
+      "display_name": "台积电（TSM）",
+      "market": "US",
+      "lane": "先进制程",
+      "earnings_event": {
+        "date": "2026-06-10",
+        "source": "longbridge_filing",
+        "title": "6-K - TAIWAN SEMICONDUCTOR MANUFACTURING CO LTD (0001046179) (Filer)",
+        "url": "https://www.sec.gov/Archives/edgar/data/1046179/000104617926000367/tsm-revenue20260610.htm"
+      },
+      "impact_score": 59.84,
+      "evidence": {
+        "revenue_profit_surprise": "Longbridge 财报最新值显示，营收同比 +40.1%，净利润同比 +64.2%，营业利润同比 +67.9%。 Longbridge 一致预期对比显示，营收相对预期 +1.1%。 Longbridge 一致预期对比显示，每股收益相对预期 +4.6%。",
+        "guidance": "",
+        "gross_margin": "毛利率约 +66.2%。",
+        "orders_backlog": ""
+      },
+      "post_earnings_reaction": {
+        "price_change_45d": 26.52
+      },
+      "action_label": "重点关注",
+      "one_to_four_week_view": "偏强",
+      "why": "财报证据、产业链重要性和市场反应同时偏强，适合列入未来 1-4 周重点跟踪。",
+      "risk": "如果财报后的资金承接不足，或者指引和订单没有跟上，短期走势可能转弱。",
+      "missing_evidence": [
+        "下季度或全年指引",
+        "订单、积压订单或客户需求"
+      ],
+      "evidence_provenance": [
+        {
+          "source": "Longbridge 公告",
+          "detail": "6-K - TAIWAN SEMICONDUCTOR MANUFACTURING CO LTD (0001046179) (Filer)",
+          "url": "https://www.sec.gov/Archives/edgar/data/1046179/000104617926000367/tsm-revenue20260610.htm"
+        },
+        {
+          "source": "Longbridge 财务报表",
+          "detail": "最新财报核心指标",
+          "url": ""
+        },
+        {
+          "source": "Longbridge 财务报表",
+          "detail": "最新毛利率",
+          "url": ""
+        },
+        {
+          "source": "Longbridge 一致预期",
+          "detail": "营收预期对比",
+          "url": ""
+        },
+        {
+          "source": "Longbridge 一致预期",
+          "detail": "每股收益预期对比",
+          "url": ""
+        }
+      ]
+    },
+    {
+      "symbol": "0522.HK",
+      "display_name": "ASMPT（0522.HK）",
+      "market": "HK",
+      "lane": "半导体设备",
+      "earnings_event": {
+        "date": "2026-04-21",
+        "source": "longbridge_calendar",
+        "title": "2026 财年第 1 季度业绩披露",
+        "url": "",
+        "raw": {
+          "count": 2,
+          "date": "2026-04-21",
+          "infos": [
+            {
+              "activity_type": "",
+              "chart_uid": "",
+              "content": "2026 财年第 1 季度业绩披露",
+              "counter_id": "ST/HK/522",
+              "counter_name": "ASMPT",
+              "currency": "HKD",
+              "data_kv": [
+                {
+                  "key": "",
+                  "type": "estimate_eps",
+                  "value": "0.5602",
+                  "value_raw": "0.560240"
+                },
+                {
+                  "key": "",
+                  "type": "estimate_revenue",
+                  "value": "38.83 亿",
+                  "value_raw": "3882796480.000000"
+                },
+                {
+                  "key": "",
+                  "type": "actual_eps",
+                  "value": "0.61",
+                  "value_raw": "0.610000"
+                },
+                {
+                  "key": "",
+                  "type": "actual_revenue",
+                  "value": "39.67 亿",
+                  "value_raw": "3966800000.000000"
+                }
+              ],
+              "date": "2026.04.21",
+              "date_type": "盘后",
+              "datetime": "1776729600",
+              "ext": {
+                "financial_report": {
+                  "fiscal_year": "2026",
+                  "period": "1",
+                  "period_type": "qf"
+                }
+              },
+              "financial_market_time": "",
+              "icon": "https://assets.lbkrs.com/ticker/ST/HK/522.png",
+              "id": "744704",
+              "live": null,
+              "market": "HK",
+              "source_type": 0,
+              "star": 0,
+              "type": "financial"
+            }
+          ]
+        }
+      },
+      "impact_score": 53.0,
+      "evidence": {
+        "revenue_profit_surprise": "Longbridge 财报最新值显示，营收同比 +26.9%，净利润同比 +203.5%，营业利润同比 +140.8%。 Longbridge 一致预期对比显示，营收相对预期 +2.2%。 Longbridge 一致预期对比显示，每股收益相对预期 +8.9%。",
+        "guidance": "",
+        "gross_margin": "毛利率约 +39.5%。",
+        "orders_backlog": ""
+      },
+      "post_earnings_reaction": {
+        "price_change_45d": 41.91
+      },
+      "action_label": "重点关注",
+      "one_to_four_week_view": "偏强",
+      "why": "财报证据、产业链重要性和市场反应同时偏强，适合列入未来 1-4 周重点跟踪。",
+      "risk": "如果财报后的资金承接不足，或者指引和订单没有跟上，短期走势可能转弱。",
+      "missing_evidence": [
+        "下季度或全年指引",
+        "订单、积压订单或客户需求"
+      ],
+      "evidence_provenance": [
+        {
+          "source": "Longbridge 财报日历",
+          "detail": "2026 财年第 1 季度业绩披露",
+          "url": ""
+        },
+        {
+          "source": "Longbridge 财务报表",
+          "detail": "最新财报核心指标",
+          "url": ""
+        },
+        {
+          "source": "Longbridge 财务报表",
+          "detail": "最新毛利率",
+          "url": ""
+        },
+        {
+          "source": "Longbridge 一致预期",
+          "detail": "营收预期对比",
+          "url": ""
+        },
+        {
+          "source": "Longbridge 一致预期",
+          "detail": "每股收益预期对比",
+          "url": ""
+        }
+      ]
+    },
+    {
+      "symbol": "1347.HK",
+      "display_name": "华虹半导体（1347.HK）",
+      "market": "HK",
+      "lane": "半导体制造",
+      "earnings_event": {
+        "date": "2026-05-14",
+        "source": "longbridge_calendar",
+        "title": "2026 财年第 1 季度业绩披露",
+        "url": "",
+        "raw": {
+          "count": 2,
+          "date": "2026-05-14",
+          "infos": [
+            {
+              "activity_type": "",
+              "chart_uid": "",
+              "content": "2026 财年第 1 季度业绩披露",
+              "counter_id": "ST/HK/1347",
+              "counter_name": "华虹宏力",
+              "currency": "HKD",
+              "data_kv": [
+                {
+                  "key": "",
+                  "type": "estimate_eps",
+                  "value": "0.1387",
+                  "value_raw": "0.138715"
+                },
+                {
+                  "key": "",
+                  "type": "estimate_revenue",
+                  "value": "51.7 亿",
+                  "value_raw": "5170211911.139102"
+                },
+                {
+                  "key": "",
+                  "type": "actual_eps",
+                  "value": "0.094",
+                  "value_raw": "0.094044"
+                },
+                {
+                  "key": "",
+                  "type": "actual_revenue",
+                  "value": "53.38 亿",
+                  "value_raw": "5337799907.806802"
+                }
+              ],
+              "date": "2026.05.14",
+              "date_type": "盘后",
+              "datetime": "1778716800",
+              "ext": {
+                "financial_report": {
+                  "fiscal_year": "2026",
+                  "period": "1",
+                  "period_type": "qf"
+                }
+              },
+              "financial_market_time": "",
+              "icon": "https://assets.lbkrs.com/ticker/ST/HK/1347.png",
+              "id": "760105",
+              "live": {
+                "booked": false,
+                "counter_ids": [
+                  "ST/HK/1347",
+                  "ST/SH/688347"
+                ],
+                "icon": "https://assets.lbctrl.com/uploads/fe952da9-f735-483b-a216-85aed558f783/tg_replay@3x.png",
+                "id": "346067",
+                "name": "华虹半导体（01347.HK，688347.SH）2026 年第一季度业绩说明会",
+                "started_at": "1778749200",
+                "status": 4
+              },
+              "market": "HK",
+              "source_type": 0,
+              "star": 0,
+              "type": "financial"
+            }
+          ]
+        }
+      },
+      "impact_score": 53.0,
+      "evidence": {
+        "revenue_profit_surprise": "Longbridge 财报最新值显示，营收同比 +23.1%，净利润同比 +462.2%，营业利润同比 +58.2%。 Longbridge 一致预期对比显示，营收相对预期 +3.2%。 Longbridge 一致预期对比显示，每股收益相对预期 -32.2%。",
+        "guidance": "",
+        "gross_margin": "毛利率约 +13.0%。",
+        "orders_backlog": ""
+      },
+      "post_earnings_reaction": {
+        "price_change_45d": 83.76
+      },
+      "action_label": "重点关注",
+      "one_to_four_week_view": "偏强",
+      "why": "财报证据、产业链重要性和市场反应同时偏强，适合列入未来 1-4 周重点跟踪。",
+      "risk": "如果财报后的资金承接不足，或者指引和订单没有跟上，短期走势可能转弱。",
+      "missing_evidence": [
+        "下季度或全年指引",
+        "订单、积压订单或客户需求"
+      ],
+      "evidence_provenance": [
+        {
+          "source": "Longbridge 财报日历",
+          "detail": "2026 财年第 1 季度业绩披露",
+          "url": ""
+        },
+        {
+          "source": "Longbridge 财务报表",
+          "detail": "最新财报核心指标",
+          "url": ""
+        },
+        {
+          "source": "Longbridge 财务报表",
+          "detail": "最新毛利率",
+          "url": ""
+        },
+        {
+          "source": "Longbridge 一致预期",
+          "detail": "营收预期对比",
+          "url": ""
+        },
+        {
+          "source": "Longbridge 一致预期",
+          "detail": "每股收益预期对比",
+          "url": ""
+        }
+      ]
+    },
+    {
+      "symbol": "NVDA",
+      "display_name": "英伟达（NVDA）",
+      "market": "US",
+      "lane": "AI 芯片",
+      "earnings_event": {
+        "date": "2026-06-18",
+        "source": "longbridge_filing",
+        "title": "8-K - NVIDIA CORP (0001045810) (Filer)",
+        "url": "https://www.sec.gov/Archives/edgar/data/1045810/000119312526275783/d48176d8k.htm"
+      },
+      "impact_score": 48.19,
+      "evidence": {
+        "revenue_profit_surprise": "Longbridge 财报最新值显示，营收同比 +85.2%，净利润同比 +210.6%，营业利润同比 +147.4%。 Longbridge 一致预期对比显示，营收相对预期 +3.2%。 Longbridge 一致预期对比显示，每股收益相对预期 +37.2%。",
+        "guidance": "",
+        "gross_margin": "毛利率约 +74.9%。",
+        "orders_backlog": ""
+      },
+      "post_earnings_reaction": {
+        "price_change_45d": 3.58
+      },
+      "action_label": "重点关注",
+      "one_to_four_week_view": "偏强",
+      "why": "财报证据、产业链重要性和市场反应同时偏强，适合列入未来 1-4 周重点跟踪。",
+      "risk": "如果财报后的资金承接不足，或者指引和订单没有跟上，短期走势可能转弱。",
+      "missing_evidence": [
+        "下季度或全年指引",
+        "订单、积压订单或客户需求"
+      ],
+      "evidence_provenance": [
+        {
+          "source": "Longbridge 公告",
+          "detail": "8-K - NVIDIA CORP (0001045810) (Filer)",
+          "url": "https://www.sec.gov/Archives/edgar/data/1045810/000119312526275783/d48176d8k.htm"
+        },
+        {
+          "source": "Longbridge 财务报表",
+          "detail": "最新财报核心指标",
+          "url": ""
+        },
+        {
+          "source": "Longbridge 财务报表",
+          "detail": "最新毛利率",
+          "url": ""
+        },
+        {
+          "source": "Longbridge 一致预期",
+          "detail": "营收预期对比",
+          "url": ""
+        },
+        {
+          "source": "Longbridge 一致预期",
+          "detail": "每股收益预期对比",
+          "url": ""
+        }
+      ]
+    },
+    {
+      "symbol": "AVGO",
+      "display_name": "博通（AVGO）",
+      "market": "US",
+      "lane": "AI 网络芯片",
+      "earnings_event": {
+        "date": "2026-06-18",
+        "source": "longbridge_filing",
+        "title": "8-K - Broadcom Inc. (0001730168) (Filer)",
+        "url": "https://www.sec.gov/Archives/edgar/data/1730168/000119312526275077/d149683d8k.htm"
+      },
+      "impact_score": 43.87,
+      "evidence": {
+        "revenue_profit_surprise": "Longbridge 财报最新值显示，营收同比 +38.7%，净利润同比 +59.1%，营业利润同比 +34.6%。 Longbridge 一致预期对比显示，营收相对预期 +0.5%。 Longbridge 一致预期对比显示，每股收益相对预期 +11.1%。",
+        "guidance": "",
+        "gross_margin": "毛利率约 +75.8%。",
+        "orders_backlog": ""
+      },
+      "post_earnings_reaction": {
+        "price_change_45d": -3.39
+      },
+      "action_label": "重点关注",
+      "one_to_four_week_view": "偏强",
+      "why": "财报证据、产业链重要性和市场反应同时偏强，适合列入未来 1-4 周重点跟踪。",
+      "risk": "如果财报后的资金承接不足，或者指引和订单没有跟上，短期走势可能转弱。",
+      "missing_evidence": [
+        "下季度或全年指引",
+        "订单、积压订单或客户需求"
+      ],
+      "evidence_provenance": [
+        {
+          "source": "Longbridge 公告",
+          "detail": "8-K - Broadcom Inc. (0001730168) (Filer)",
+          "url": "https://www.sec.gov/Archives/edgar/data/1730168/000119312526275077/d149683d8k.htm"
+        },
+        {
+          "source": "Longbridge 财务报表",
+          "detail": "最新财报核心指标",
+          "url": ""
+        },
+        {
+          "source": "Longbridge 财务报表",
+          "detail": "最新毛利率",
+          "url": ""
+        },
+        {
+          "source": "Longbridge 一致预期",
+          "detail": "营收预期对比",
+          "url": ""
+        },
+        {
+          "source": "Longbridge 一致预期",
+          "detail": "每股收益预期对比",
+          "url": ""
+        }
+      ]
+    },
+    {
+      "symbol": "AMD",
+      "display_name": "超威半导体（AMD）",
+      "market": "US",
+      "lane": "AI 芯片",
+      "earnings_event": {
+        "date": "2026-08-04",
+        "source": "yfinance",
+        "title": "公开财报日历"
+      },
+      "impact_score": 40.0,
+      "evidence": {
+        "revenue_profit_surprise": "Longbridge 财报最新值显示，营收同比 +37.9%，净利润同比 +95.1%，营业利润同比 +83.1%。 Longbridge 一致预期对比显示，营收相对预期 +3.4%。 Longbridge 一致预期对比显示，每股收益相对预期 +12.8%。",
+        "guidance": "",
+        "gross_margin": "毛利率约 +55.4%。",
+        "orders_backlog": ""
+      },
+      "post_earnings_reaction": {
+        "price_change_45d": 98.15
+      },
+      "action_label": "重点关注",
+      "one_to_four_week_view": "偏强",
+      "why": "财报证据、产业链重要性和市场反应同时偏强，适合列入未来 1-4 周重点跟踪。",
+      "risk": "如果财报后的资金承接不足，或者指引和订单没有跟上，短期走势可能转弱。",
+      "missing_evidence": [
+        "下季度或全年指引",
+        "订单、积压订单或客户需求"
+      ],
+      "evidence_provenance": [
+        {
+          "source": "Longbridge 财务报表",
+          "detail": "最新财报核心指标",
+          "url": ""
+        },
+        {
+          "source": "Longbridge 财务报表",
+          "detail": "最新毛利率",
+          "url": ""
+        },
+        {
+          "source": "Longbridge 一致预期",
+          "detail": "营收预期对比",
+          "url": ""
+        },
+        {
+          "source": "Longbridge 一致预期",
+          "detail": "每股收益预期对比",
+          "url": ""
+        }
+      ]
+    }
+  ],
+  "watch_targets": [
+    {
+      "symbol": "0981.HK",
+      "display_name": "中芯国际（0981.HK）",
+      "market": "HK",
+      "lane": "先进制程",
+      "earnings_event": {
+        "date": "2026-06-03",
+        "source": "longbridge_filing",
+        "title": "FORM OF PROXY FOR USE AT THE ANNUAL GENERAL MEETINGTO BE HELD ON 26 JUNE 2026",
+        "url": "https://pub.lbkrs.com/news-notices/hk/833820899611.PDF",
+        "raw": {
+          "count": 2,
+          "date": "2026-03-26",
+          "infos": [
+            {
+              "activity_type": "",
+              "chart_uid": "",
+              "content": "2025 财年年报业绩披露",
+              "counter_id": "ST/HK/981",
+              "counter_name": "中芯国际",
+              "currency": "HKD",
+              "data_kv": [
+                {
+                  "key": "",
+                  "type": "estimate_eps",
+                  "value": "0.7046",
+                  "value_raw": "0.704692"
+                },
+                {
+                  "key": "",
+                  "type": "estimate_revenue",
+                  "value": "723 亿",
+                  "value_raw": "72343418549.191380"
+                },
+                {
+                  "key": "",
+                  "type": "actual_eps",
+                  "value": "0.6223",
+                  "value_raw": "0.622382"
+                },
+                {
+                  "key": "",
+                  "type": "actual_revenue",
+                  "value": "758 亿",
+                  "value_raw": "75780792682.557480"
+                }
+              ],
+              "date": "2026.03.26",
+              "date_type": "盘后",
+              "datetime": "1774483200",
+              "ext": {
+                "financial_report": {
+                  "fiscal_year": "2025",
+                  "period": "4",
+                  "period_type": "af"
+                }
+              },
+              "financial_market_time": "",
+              "icon": "https://assets.lbkrs.com/ticker/ST/HK/981.png",
+              "id": "733757",
+              "live": null,
+              "market": "HK",
+              "source_type": 0,
+              "star": 0,
+              "type": "financial"
+            }
+          ]
+        }
+      },
+      "impact_score": 70.0,
+      "evidence": {
+        "revenue_profit_surprise": "Longbridge 财报最新值显示，营收同比 +12.3%，净利润同比 +5.8%，营业利润同比 -19.4%。 Longbridge 一致预期对比显示，营收相对预期 +3.7%。 Longbridge 一致预期对比显示，每股收益相对预期 -26.8%。",
+        "guidance": "",
+        "gross_margin": "毛利率约 +20.1%。",
+        "orders_backlog": ""
+      },
+      "post_earnings_reaction": {
+        "price_change_45d": 31.17
+      },
+      "action_label": "继续观察",
+      "one_to_four_week_view": "震荡",
+      "why": "已有部分正面证据，但还缺少指引、订单或利润质量的进一步确认。",
+      "risk": "如果财报后的资金承接不足，或者指引和订单没有跟上，短期走势可能转弱。",
+      "missing_evidence": [
+        "下季度或全年指引",
+        "订单、积压订单或客户需求"
+      ],
+      "evidence_provenance": [
+        {
+          "source": "Longbridge 财报日历",
+          "detail": "2025 财年年报业绩披露",
+          "url": ""
+        },
+        {
+          "source": "Longbridge 公告",
+          "detail": "FORM OF PROXY FOR USE AT THE ANNUAL GENERAL MEETINGTO BE HELD ON 26 JUNE 2026",
+          "url": "https://pub.lbkrs.com/news-notices/hk/833820899611.PDF"
+        },
+        {
+          "source": "Longbridge 财务报表",
+          "detail": "最新财报核心指标",
+          "url": ""
+        },
+        {
+          "source": "Longbridge 财务报表",
+          "detail": "最新毛利率",
+          "url": ""
+        },
+        {
+          "source": "Longbridge 一致预期",
+          "detail": "营收预期对比",
+          "url": ""
+        },
+        {
+          "source": "Longbridge 一致预期",
+          "detail": "每股收益预期对比",
+          "url": ""
+        }
+      ]
+    }
+  ],
+  "avoid_targets": [
+    {
+      "symbol": "1211.HK",
+      "display_name": "比亚迪（1211.HK）",
+      "market": "HK",
+      "lane": "新能源车",
+      "earnings_event": {
+        "date": "2026-06-09",
+        "source": "longbridge_filing",
+        "title": "POLL RESULTS OF ANNUAL GENERAL MEETING",
+        "url": "https://pub.lbkrs.com/news-notices/hk/834371325386.PDF",
+        "raw": {
+          "count": 3,
+          "date": "2026-03-27",
+          "infos": [
+            {
+              "activity_type": "",
+              "chart_uid": "",
+              "content": "2025 财年第 4 季度业绩披露",
+              "counter_id": "ST/HK/1211",
+              "counter_name": "比亚迪股份",
+              "currency": "HKD",
+              "data_kv": [
+                {
+                  "key": "",
+                  "type": "estimate_eps",
+                  "value": "1.3566",
+                  "value_raw": "1.356678"
+                },
+                {
+                  "key": "",
+                  "type": "estimate_revenue",
+                  "value": "2730 亿",
+                  "value_raw": "273024363747.254063"
+                },
+                {
+                  "key": "",
+                  "type": "actual_eps",
+                  "value": "1.1342",
+                  "value_raw": "1.134272"
+                },
+                {
+                  "key": "",
+                  "type": "actual_revenue",
+                  "value": "2643 亿",
+                  "value_raw": "264329153015.328680"
+                }
+              ],
+              "date": "2026.03.27",
+              "date_type": "",
+              "datetime": "1774569600",
+              "ext": {
+                "financial_report": {
+                  "fiscal_year": "2025",
+                  "period": "4",
+                  "period_type": "qf"
+                }
+              },
+              "financial_market_time": "",
+              "icon": "https://assets.lbkrs.com/ticker/ST/HK/1211.png",
+              "id": "734490",
+              "live": null,
+              "market": "HK",
+              "source_type": 0,
+              "star": 0,
+              "type": "financial"
+            }
+          ]
+        }
+      },
+      "impact_score": 48.0,
+      "evidence": {
+        "revenue_profit_surprise": "Longbridge 财报最新值显示，营收同比 -6.7%，净利润同比 -52.8%，营业利润同比 -14.4%。 Longbridge 一致预期对比显示，营收相对预期 +5.3%。 Longbridge 一致预期对比显示，每股收益相对预期 -18.6%。",
+        "guidance": "",
+        "gross_margin": "毛利率约 +18.8%。",
+        "orders_backlog": ""
+      },
+      "post_earnings_reaction": {
+        "price_change_45d": -31.59
+      },
+      "action_label": "回避",
+      "one_to_four_week_view": "偏弱",
+      "why": "财报或市场反应偏弱，短期更容易被资金回避。",
+      "risk": "如果财报后的资金承接不足，或者指引和订单没有跟上，短期走势可能转弱。",
+      "missing_evidence": [
+        "下季度或全年指引",
+        "订单、积压订单或客户需求"
+      ],
+      "evidence_provenance": [
+        {
+          "source": "Longbridge 财报日历",
+          "detail": "2025 财年第 4 季度业绩披露",
+          "url": ""
+        },
+        {
+          "source": "Longbridge 公告",
+          "detail": "POLL RESULTS OF ANNUAL GENERAL MEETING",
+          "url": "https://pub.lbkrs.com/news-notices/hk/834371325386.PDF"
+        },
+        {
+          "source": "Longbridge 财务报表",
+          "detail": "最新财报核心指标",
+          "url": ""
+        },
+        {
+          "source": "Longbridge 财务报表",
+          "detail": "最新毛利率",
+          "url": ""
+        },
+        {
+          "source": "Longbridge 一致预期",
+          "detail": "营收预期对比",
+          "url": ""
+        },
+        {
+          "source": "Longbridge 一致预期",
+          "detail": "每股收益预期对比",
+          "url": ""
+        }
+      ]
+    }
+  ],
+  "evidence_gaps": [
+    "中芯国际（0981.HK）：缺少下季度或全年指引、订单、积压订单或客户需求",
+    "台积电（TSM）：缺少下季度或全年指引、订单、积压订单或客户需求",
+    "ASMPT（0522.HK）：缺少下季度或全年指引、订单、积压订单或客户需求",
+    "华虹半导体（1347.HK）：缺少下季度或全年指引、订单、积压订单或客户需求",
+    "英伟达（NVDA）：缺少下季度或全年指引、订单、积压订单或客户需求",
+    "比亚迪（1211.HK）：缺少下季度或全年指引、订单、积压订单或客户需求",
+    "博通（AVGO）：缺少下季度或全年指引、订单、积压订单或客户需求",
+    "超威半导体（AMD）：缺少下季度或全年指引、订单、积压订单或客户需求"
+  ],
+  "report_sections": {
+    "今日财报主线": [
+      "财报季重点不是看全部公司，而是看 AI 算力、半导体、电力基础设施、互联网平台和新能源车这些主线公司的业绩是否兑现。",
+      "本轮只选择对未来 1-4 周市场方向最有影响的 20 家以内公司，优先看 Longbridge 财报日历、公告、结构化财务数据和一致预期，再用市场反应做验证。"
+    ],
+    "最值得关注的公司": [
+      "台积电（TSM）：重点关注，未来 1-4 周偏强。 本次披露文件是《6-K - TAIWAN SEMICONDUCTOR MANUFACTURING CO LTD (0001046179) (Filer)》。 Longbridge 财报最新值显示，营收同比 +40.1%，净利润同比 +64.2%，营业利润同比 +67.9%。 Longbridge 一致预期对比显示，营收相对预期 +1.1%。 Longbridge 一致预期对比显示，每股收益相对预期 +4.6%。 毛利率约 +66.2%。 财报证据、产业链重要性和市场反应同时偏强，适合列入未来 1-4 周重点跟踪。",
+      "ASMPT（0522.HK）：重点关注，未来 1-4 周偏强。 本次披露文件是《2026 财年第 1 季度业绩披露》。 Longbridge 财报最新值显示，营收同比 +26.9%，净利润同比 +203.5%，营业利润同比 +140.8%。 Longbridge 一致预期对比显示，营收相对预期 +2.2%。 Longbridge 一致预期对比显示，每股收益相对预期 +8.9%。 毛利率约 +39.5%。 财报证据、产业链重要性和市场反应同时偏强，适合列入未来 1-4 周重点跟踪。",
+      "华虹半导体（1347.HK）：重点关注，未来 1-4 周偏强。 本次披露文件是《2026 财年第 1 季度业绩披露》。 Longbridge 财报最新值显示，营收同比 +23.1%，净利润同比 +462.2%，营业利润同比 +58.2%。 Longbridge 一致预期对比显示，营收相对预期 +3.2%。 Longbridge 一致预期对比显示，每股收益相对预期 -32.2%。 毛利率约 +13.0%。 财报证据、产业链重要性和市场反应同时偏强，适合列入未来 1-4 周重点跟踪。",
+      "英伟达（NVDA）：重点关注，未来 1-4 周偏强。 本次披露文件是《8-K - NVIDIA CORP (0001045810) (Filer)》。 Longbridge 财报最新值显示，营收同比 +85.2%，净利润同比 +210.6%，营业利润同比 +147.4%。 Longbridge 一致预期对比显示，营收相对预期 +3.2%。 Longbridge 一致预期对比显示，每股收益相对预期 +37.2%。 毛利率约 +74.9%。 财报证据、产业链重要性和市场反应同时偏强，适合列入未来 1-4 周重点跟踪。",
+      "博通（AVGO）：重点关注，未来 1-4 周偏强。 本次披露文件是《8-K - Broadcom Inc. (0001730168) (Filer)》。 Longbridge 财报最新值显示，营收同比 +38.7%，净利润同比 +59.1%，营业利润同比 +34.6%。 Longbridge 一致预期对比显示，营收相对预期 +0.5%。 Longbridge 一致预期对比显示，每股收益相对预期 +11.1%。 毛利率约 +75.8%。 财报证据、产业链重要性和市场反应同时偏强，适合列入未来 1-4 周重点跟踪。",
+      "超威半导体（AMD）：重点关注，未来 1-4 周偏强。 本次披露文件是《公开财报日历》。 Longbridge 财报最新值显示，营收同比 +37.9%，净利润同比 +95.1%，营业利润同比 +83.1%。 Longbridge 一致预期对比显示，营收相对预期 +3.4%。 Longbridge 一致预期对比显示，每股收益相对预期 +12.8%。 毛利率约 +55.4%。 财报证据、产业链重要性和市场反应同时偏强，适合列入未来 1-4 周重点跟踪。"
+    ],
+    "继续观察的公司": [
+      "中芯国际（0981.HK）：继续观察，未来 1-4 周震荡。 本次披露文件是《FORM OF PROXY FOR USE AT THE ANNUAL GENERAL MEETINGTO BE HELD ON 26 JUNE 2026》。 Longbridge 财报最新值显示，营收同比 +12.3%，净利润同比 +5.8%，营业利润同比 -19.4%。 Longbridge 一致预期对比显示，营收相对预期 +3.7%。 Longbridge 一致预期对比显示，每股收益相对预期 -26.8%。 毛利率约 +20.1%。 已有部分正面证据，但还缺少指引、订单或利润质量的进一步确认。"
+    ],
+    "需要回避的公司": [
+      "比亚迪（1211.HK）：回避，未来 1-4 周偏弱。 本次披露文件是《POLL RESULTS OF ANNUAL GENERAL MEETING》。 Longbridge 财报最新值显示，营收同比 -6.7%，净利润同比 -52.8%，营业利润同比 -14.4%。 Longbridge 一致预期对比显示，营收相对预期 +5.3%。 Longbridge 一致预期对比显示，每股收益相对预期 -18.6%。 毛利率约 +18.8%。 财报或市场反应偏弱，短期更容易被资金回避。"
+    ],
+    "1-4 周走势判断": [
+      "中芯国际（0981.HK）：未来 1-4 周震荡。披露文件《FORM OF PROXY FOR USE AT THE ANNUAL GENERAL MEETINGTO BE HELD ON 26 JUNE 2026》，Longbridge 财报最新值显示，营收同比 +12.3%，净利润同比 +5.8%，营业利润同比 -19.4%。 Longbridge 一致预期对比显示，营收相对预期 +3.7%。 Longbridge 一致预期对比显示，每股收益相对预期 -26.8%。核心原因是已有部分正面证据，但还缺少指引、订单或利润质量的进一步确认。",
+      "台积电（TSM）：未来 1-4 周偏强。披露文件《6-K - TAIWAN SEMICONDUCTOR MANUFACTURING CO LTD (0001046179) (Filer)》，Longbridge 财报最新值显示，营收同比 +40.1%，净利润同比 +64.2%，营业利润同比 +67.9%。 Longbridge 一致预期对比显示，营收相对预期 +1.1%。 Longbridge 一致预期对比显示，每股收益相对预期 +4.6%。核心原因是财报证据、产业链重要性和市场反应同时偏强，适合列入未来 1-4 周重点跟踪。",
+      "ASMPT（0522.HK）：未来 1-4 周偏强。披露文件《2026 财年第 1 季度业绩披露》，Longbridge 财报最新值显示，营收同比 +26.9%，净利润同比 +203.5%，营业利润同比 +140.8%。 Longbridge 一致预期对比显示，营收相对预期 +2.2%。 Longbridge 一致预期对比显示，每股收益相对预期 +8.9%。核心原因是财报证据、产业链重要性和市场反应同时偏强，适合列入未来 1-4 周重点跟踪。",
+      "华虹半导体（1347.HK）：未来 1-4 周偏强。披露文件《2026 财年第 1 季度业绩披露》，Longbridge 财报最新值显示，营收同比 +23.1%，净利润同比 +462.2%，营业利润同比 +58.2%。 Longbridge 一致预期对比显示，营收相对预期 +3.2%。 Longbridge 一致预期对比显示，每股收益相对预期 -32.2%。核心原因是财报证据、产业链重要性和市场反应同时偏强，适合列入未来 1-4 周重点跟踪。",
+      "英伟达（NVDA）：未来 1-4 周偏强。披露文件《8-K - NVIDIA CORP (0001045810) (Filer)》，Longbridge 财报最新值显示，营收同比 +85.2%，净利润同比 +210.6%，营业利润同比 +147.4%。 Longbridge 一致预期对比显示，营收相对预期 +3.2%。 Longbridge 一致预期对比显示，每股收益相对预期 +37.2%。核心原因是财报证据、产业链重要性和市场反应同时偏强，适合列入未来 1-4 周重点跟踪。",
+      "比亚迪（1211.HK）：未来 1-4 周偏弱。披露文件《POLL RESULTS OF ANNUAL GENERAL MEETING》，Longbridge 财报最新值显示，营收同比 -6.7%，净利润同比 -52.8%，营业利润同比 -14.4%。 Longbridge 一致预期对比显示，营收相对预期 +5.3%。 Longbridge 一致预期对比显示，每股收益相对预期 -18.6%。核心原因是财报或市场反应偏弱，短期更容易被资金回避。",
+      "博通（AVGO）：未来 1-4 周偏强。披露文件《8-K - Broadcom Inc. (0001730168) (Filer)》，Longbridge 财报最新值显示，营收同比 +38.7%，净利润同比 +59.1%，营业利润同比 +34.6%。 Longbridge 一致预期对比显示，营收相对预期 +0.5%。 Longbridge 一致预期对比显示，每股收益相对预期 +11.1%。核心原因是财报证据、产业链重要性和市场反应同时偏强，适合列入未来 1-4 周重点跟踪。",
+      "超威半导体（AMD）：未来 1-4 周偏强。披露文件《公开财报日历》，Longbridge 财报最新值显示，营收同比 +37.9%，净利润同比 +95.1%，营业利润同比 +83.1%。 Longbridge 一致预期对比显示，营收相对预期 +3.4%。 Longbridge 一致预期对比显示，每股收益相对预期 +12.8%。核心原因是财报证据、产业链重要性和市场反应同时偏强，适合列入未来 1-4 周重点跟踪。"
+    ],
+    "证据缺口": [
+      "中芯国际（0981.HK）：缺少下季度或全年指引、订单、积压订单或客户需求",
+      "台积电（TSM）：缺少下季度或全年指引、订单、积压订单或客户需求",
+      "ASMPT（0522.HK）：缺少下季度或全年指引、订单、积压订单或客户需求",
+      "华虹半导体（1347.HK）：缺少下季度或全年指引、订单、积压订单或客户需求",
+      "英伟达（NVDA）：缺少下季度或全年指引、订单、积压订单或客户需求",
+      "比亚迪（1211.HK）：缺少下季度或全年指引、订单、积压订单或客户需求",
+      "博通（AVGO）：缺少下季度或全年指引、订单、积压订单或客户需求",
+      "超威半导体（AMD）：缺少下季度或全年指引、订单、积压订单或客户需求"
+    ]
+  },
+  "json_path": "/Users/bingzhang/clawd/myclaw-repo/data/world_model/earnings_season_research/earnings_season_research_20260623_180223.json",
+  "latest_path": "/Users/bingzhang/clawd/myclaw-repo/data/world_model/earnings_season_research/latest.json"
+}

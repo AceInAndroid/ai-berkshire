@@ -54,3 +54,13 @@ python3 tools/report_audit.py verdict --results '<json-results>'
 ```
 
 Do not use LLM mental math for financial calculations that affect an investment conclusion.
+
+## OpenClaw Exports
+
+When a report needs to be consumable by OpenClaw, use the phase 1 exporter:
+
+```bash
+python3 tools/openclaw_export.py --report <report.md> --skill <skill-name> --symbol <ticker> --market <market> --company-name <name> --research-type <type>
+```
+
+Default output is `data/openclaw_exports/`. The exporter refuses to write under `/Users/bingzhang/clawd/myclaw-repo/data/world_model` during phase 1. See `docs/openclaw-adapter.md`.

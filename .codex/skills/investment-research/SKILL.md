@@ -19,6 +19,16 @@ reports/{公司名}/{公司名}-research-{YYYYMMDD}.md
 
 If the user asks for analysis only, provide the report content in the conversation and state the recommended output path.
 
+## OpenClaw Export
+
+If the user asks to adapt the report for OpenClaw or to make it OpenClaw-consumable, generate the report first and then run:
+
+```bash
+python3 tools/openclaw_export.py --report <report.md> --skill investment-research --symbol <ticker> --market <market> --company-name <name> --research-type company_research
+```
+
+Use the default `data/openclaw_exports/` output. Do not write to `/Users/bingzhang/clawd/myclaw-repo/data/world_model`; OpenClaw owns runtime import and health state.
+
 ## Research Sequence
 
 1. Start with AI research bias awareness.

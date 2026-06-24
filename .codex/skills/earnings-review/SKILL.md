@@ -16,6 +16,8 @@ Codex adaptation rules:
 - Use current web research with citations for time-sensitive market, company, financial, or news facts.
 - Keep facts, opinions, estimates, and uncertainty explicitly separated.
 - Write reports in Chinese unless the user asks otherwise.
+- If OpenClaw compatibility is requested, export with `tools/openclaw_export.py` and `--target-profile earnings_season_research`; Longbridge filing/financial-report/consensus/calendar provenance must remain explicit or the export is degraded.
+- Do not write to `/Users/bingzhang/clawd/myclaw-repo/data/world_model`; OpenClaw owns runtime import and health state.
 
 ## Original Methodology Adapted For Codex
 

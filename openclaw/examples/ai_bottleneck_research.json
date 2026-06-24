@@ -1,0 +1,16 @@
+{
+  "generated_at": "2026-06-24T00:00:00+08:00",
+  "status": "degraded",
+  "coverage": {
+    "symbols_total": 20,
+    "symbols_with_order_evidence": 3,
+    "symbols_with_margin_cashflow": 3,
+    "source_count": 3
+  },
+  "market_thesis": "AI 产业链瓶颈研究必须覆盖一组公司，而不是单公司报告。",
+  "bottleneck_lanes": [],
+  "top_targets": [],
+  "watch_targets": [],
+  "avoid_targets": [],
+  "health_notes": []
+}

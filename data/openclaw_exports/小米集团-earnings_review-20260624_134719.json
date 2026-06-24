@@ -1,0 +1,118 @@
+{
+  "schema_version": "ai-berkshire-openclaw-export-v1",
+  "generated_at": "2026-06-24T13:47:19+08:00",
+  "source_repo": "ai-berkshire",
+  "source_report": "/Users/bingzhang/Documents/code/ai-berkshire/reports/小米/小米-research-20260624.md",
+  "report_path": "/Users/bingzhang/Documents/code/ai-berkshire/reports/小米/小米-research-20260624.md",
+  "artifact_type": "earnings_review",
+  "skill": "investment-research",
+  "company_name": "小米集团",
+  "symbol": "1810.HK",
+  "market": "HK",
+  "topic": "小米集团",
+  "status": "critical",
+  "confidence": "medium",
+  "degrade_reasons": [
+    "report_has_unresolved_items_or_missing_data_section",
+    "missing:selection_reason",
+    "missing:analyzed_targets",
+    "coverage.evidence_rows_lt_4",
+    "report_sections_missing:1-4 周走势判断,今日财报主线,最值得关注的公司,继续观察的公司,需要回避的公司",
+    "source_health_degraded",
+    "longbridge_provenance_missing"
+  ],
+  "source_health": {
+    "status": "degraded",
+    "notes": [
+      "小米集团2025年报，HKEX公告文件，2026-04-28。",
+      "小米集团2026Q1业绩公告与投资者关系页面。",
+      "Yahoo Finance / Quartr / Moomoo 对小米业绩摘要。",
+      "Investing.com 1810.HK 2026-06-24延迟行情页。",
+      "HKEX 1810 报价页。",
+      "小米官方投资者关系网站与业绩材料。"
+    ]
+  },
+  "validation_summary": {
+    "report_data_section_present": true,
+    "report_audit_required": true,
+    "tooling": [
+      "tools/report_audit.py",
+      "tools/financial_rigor.py"
+    ]
+  },
+  "thesis_verdict": "有条件通过",
+  "one_to_four_week_view": "",
+  "market_thesis": "**小米是一个从手机硬件公司进化为“人车家全生态”的高执行力消费科技平台，但当前投资判断不应只看手机业务的低估值。真正的核心变量是：汽车业务能否在不牺牲质量、安全与现金纪律的前提下，把爆款势能转化为可持续利润。当前结论：有条件通过，适合继续跟踪，保守投资者等待汽车业务连续盈利和安全争议进一步消化。**",
+  "top_targets": [
+    {
+      "symbol": "1810.HK",
+      "display_name": "小米集团",
+      "market": "HK",
+      "action": "跟踪",
+      "why": "**小米是一个从手机硬件公司进化为“人车家全生态”的高执行力消费科技平台，但当前投资判断不应只看手机业务的低估值。真正的核心变量是：汽车业务能否在不牺牲质量、安全与现金纪律的前提下，把爆款势能转化为可持续利润。当前结论：有条件通过，适合继续跟踪，保守投资者等待汽车业务连续盈利和安全争议进一步消化。**"
+    }
+  ],
+  "watch_targets": [
+    {
+      "symbol": "1810.HK",
+      "display_name": "小米集团",
+      "market": "HK",
+      "action": "跟踪",
+      "why": "**小米是一个从手机硬件公司进化为“人车家全生态”的高执行力消费科技平台，但当前投资判断不应只看手机业务的低估值。真正的核心变量是：汽车业务能否在不牺牲质量、安全与现金纪律的前提下，把爆款势能转化为可持续利润。当前结论：有条件通过，适合继续跟踪，保守投资者等待汽车业务连续盈利和安全争议进一步消化。**"
+    }
+  ],
+  "avoid_targets": [],
+  "evidence_gaps": [
+    "小米集团2025年报，HKEX公告文件，2026-04-28。",
+    "小米集团2026Q1业绩公告与投资者关系页面。",
+    "Yahoo Finance / Quartr / Moomoo 对小米业绩摘要。",
+    "Investing.com 1810.HK 2026-06-24延迟行情页。",
+    "HKEX 1810 报价页。",
+    "小米官方投资者关系网站与业绩材料。"
+  ],
+  "report_sections": {
+    "一句话结论": [
+      "**小米是一个从手机硬件公司进化为“人车家全生态”的高执行力消费科技平台，但当前投资判断不应只看手机业务的低估值。真正的核心变量是：汽车业务能否在不牺牲质量、安全与现金纪律的前提下，把爆款势能转化为可持续利润。当前结论：有条件通过，适合继续跟踪，保守投资者等待汽车业务连续盈利和安全争议进一步消化。**"
+    ],
+    "风险提示": [],
+    "证据缺口": [
+      "小米集团2025年报，HKEX公告文件，2026-04-28。",
+      "小米集团2026Q1业绩公告与投资者关系页面。",
+      "Yahoo Finance / Quartr / Moomoo 对小米业绩摘要。",
+      "Investing.com 1810.HK 2026-06-24延迟行情页。",
+      "HKEX 1810 报价页。",
+      "小米官方投资者关系网站与业绩材料。"
+    ]
+  },
+  "coverage": {
+    "universe_size": 1,
+    "analyzed_count": 1,
+    "source_counts": {},
+    "evidence_rows": 1
+  },
+  "openclaw_targets": [
+    "earnings_season_research"
+  ],
+  "common_validation": {
+    "ok": true,
+    "status": "degraded",
+    "errors": [],
+    "warnings": []
+  },
+  "profile_validation": {
+    "ok": false,
+    "status": "critical",
+    "errors": [
+      "missing:selection_reason",
+      "missing:analyzed_targets",
+      "coverage.evidence_rows_lt_4",
+      "report_sections_missing:1-4 周走势判断,今日财报主线,最值得关注的公司,继续观察的公司,需要回避的公司"
+    ],
+    "warnings": [
+      "source_health_degraded",
+      "longbridge_provenance_missing"
+    ]
+  },
+  "json_path": "/Users/bingzhang/Documents/code/ai-berkshire/data/openclaw_exports/小米集团-earnings_review-20260624_134719.json",
+  "latest_path": "/Users/bingzhang/Documents/code/ai-berkshire/data/openclaw_exports/earnings_review_latest.json"
+}

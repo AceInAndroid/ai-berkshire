@@ -32,6 +32,14 @@ Within a short research cycle, answer:
 5. If financial numbers matter, use `financial-data` discipline and repository validation tools.
 6. Produce a concise Chinese report.
 
+If the user asks for OpenClaw compatibility, export the written report with:
+
+```bash
+python3 tools/openclaw_export.py --report <report.md> --skill news-pulse --symbol <ticker> --market <market> --company-name <name> --research-type news_pulse
+```
+
+Keep output under `data/openclaw_exports/`; do not write OpenClaw `world_model` files from AI Berkshire.
+
 ## Output Sections
 
 - 结论先行

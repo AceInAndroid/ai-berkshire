@@ -1,0 +1,31 @@
+{
+  "generated_at": "2026-06-24T00:00:00+08:00",
+  "status": "degraded",
+  "coverage": {
+    "universe_size": 20,
+    "analyzed_count": 1,
+    "source_counts": {
+      "longbridge": 1,
+      "yfinance_ok": 1
+    },
+    "evidence_rows": 4
+  },
+  "market_thesis": "财报季研究必须保留 Longbridge provenance。",
+  "selection_reason": "仅选择影响 1-4 周市场方向的重点公司。",
+  "source_health": {
+    "status": "degraded"
+  },
+  "analyzed_targets": [],
+  "top_targets": [],
+  "watch_targets": [],
+  "avoid_targets": [],
+  "evidence_gaps": [],
+  "report_sections": {
+    "今日财报主线": [],
+    "最值得关注的公司": [],
+    "继续观察的公司": [],
+    "需要回避的公司": [],
+    "1-4 周走势判断": [],
+    "证据缺口": []
+  }
+}

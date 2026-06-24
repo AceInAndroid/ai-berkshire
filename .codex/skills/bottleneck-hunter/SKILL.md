@@ -16,6 +16,8 @@ Codex adaptation rules:
 - Use current web research with citations for time-sensitive market, company, financial, or news facts.
 - Keep facts, opinions, estimates, and uncertainty explicitly separated.
 - Write reports in Chinese unless the user asks otherwise.
+- If OpenClaw compatibility is requested, export with `tools/openclaw_export.py` and only use `--target-profile ai_bottleneck_research` when the report covers a broad AI bottleneck universe. A single-company report must not pass as healthy AI bottleneck research.
+- Do not write to `/Users/bingzhang/clawd/myclaw-repo/data/world_model`; OpenClaw owns runtime import and health state.
 
 ## Original Methodology Adapted For Codex
 
