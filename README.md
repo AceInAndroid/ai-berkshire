@@ -213,6 +213,27 @@ AI Berkshire 确保：**同样的输入 → 结构一致、深度一致的输出
 
 ## 快速开始
 
+### Codex 使用
+
+本仓库已加入 Codex 适配层：
+
+- 仓库级规则：[`AGENTS.md`](AGENTS.md)
+- Codex 使用说明：[`docs/codex-usage.md`](docs/codex-usage.md)
+- 当前本地 OMX/Codex 技能目录：`.codex/skills/<skill-name>/SKILL.md`
+
+在当前 Codex 环境中可直接使用：
+
+```text
+$investment-research 腾讯
+$investment-team 美团
+$financial-data PDD revenue and market cap
+$news-pulse 腾讯
+```
+
+说明：当前本地 OMX/Codex 配置从 `.codex/skills` 加载项目技能；公开 Codex 文档中的通用 repo 技能路径是 `.agents/skills`。如果要把本项目发布给其他 Codex 用户，请先验证目标环境的技能发现路径，或打包成 Codex plugin。
+
+### Claude Code 使用
+
 ### 1. 安装 Claude Code
 
 ```bash
