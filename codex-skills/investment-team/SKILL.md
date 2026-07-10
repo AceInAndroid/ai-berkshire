@@ -126,6 +126,8 @@ This skill is generated from `skills/investment-team.md` so Claude Code and Code
 {任务description的内容}
 
 **研究方法**：
+- Longbridge MCP 可用时，先按 `skills/longbridge-data.md` 使用只读工具获取结构化行情、财务、估值和公司底稿
+- Longbridge 整体只算一个第三方来源，必须再与原始披露或另一独立来源交叉验证
 - 使用 WebSearch 搜索最新公开信息（财报、行业报告、新闻）
 - **财务数据必须来自两个独立来源**，按 `skills/financial-data.md` 规范执行（美股：macrotrends+stockanalysis；港股：aastocks+macrotrends；A股：东方财富+巨潮资讯），两源误差>1%须标记
 - 确保数据准确，关键数据标注来源

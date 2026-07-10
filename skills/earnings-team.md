@@ -105,6 +105,7 @@
 1. **核心财务数据提取与验证**
    - 收入、毛利、经营利润、净利润——GAAP和Non-GAAP都要
    - GAAP vs Non-GAAP差异：差了多少、差在哪里、差距扩大还是缩小
+   - Longbridge MCP 可用时，先按 `skills/longbridge-data.md` 获取结构化财务底稿；Longbridge 整体只算一个第三方来源
    - 关键数据至少两个来源交叉验证
 
    ```bash

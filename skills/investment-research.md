@@ -35,11 +35,13 @@
 ### 第一步：数据收集
 
 > **数据源规范**：参见 `skills/financial-data.md`。所有财务数据必须来自两个独立来源，误差>1%须标记。
+> - Longbridge MCP 可用时，先执行 `skills/longbridge-data.md` 获取带时间戳的结构化底稿
+> - Longbridge 整体只算一个第三方来源，多个 Longbridge 工具不能互相构成双源验证
 > - 美股：macrotrends（主）+ stockanalysis（副）
 > - 港股：aastocks（主）+ macrotrends ADR（副）
 > - A股：东方财富（主）+ 巨潮资讯（副）
 
-使用 Task 工具启动后台 Agent，从网络收集以下数据：
+优先使用 Longbridge MCP 的只读工具获取行情、公司、财报、估值和市场信息，再使用 Task/网络来源补齐原始披露和第二独立来源。收集以下数据：
 
 1. 收入结构：最近财年及近4季度分部收入、增速、毛利率
 2. 财务指标：近5年收入、净利润、毛利率、经营利润率、自由现金流、现金储备
@@ -221,7 +223,7 @@ python3 ~/ai-berkshire/tools/report_audit.py extract \
 
 **Step 2 — 取数核验：**
 对清单中每个数据点，按 `skills/financial-data.md` 规范从可靠信源取数
-（美股：macrotrends+stockanalysis；港股：aastocks+macrotrends；A股：东方财富+巨潮资讯），
+（Longbridge + 另一独立来源；或美股：macrotrends+stockanalysis；港股：aastocks+macrotrends；A股：东方财富+巨潮资讯），
 填入 `fetched_value` / `fetched_source` / `fetched_value2` / `fetched_source2`。
 
 **Step 3 — 输出判决：**
