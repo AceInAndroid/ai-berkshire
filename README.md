@@ -290,6 +290,11 @@ codex mcp list
 
 首次添加时按浏览器提示完成 OAuth 授权，然后重启 Codex。完整的数据来源边界、双源验证和只读安全规则参见 [`docs/longbridge-mcp.md`](docs/longbridge-mcp.md)。
 
+推荐先阅读：
+
+- [`docs/longbridge-ai-berkshire.md`](docs/longbridge-ai-berkshire.md)：Longbridge 如何进入 AI Berkshire 的取数、验证、估值和报告链路
+- [`docs/longbridge-mcp.md`](docs/longbridge-mcp.md)：Codex/Claude/通用客户端配置、OAuth、区域端点、验证和故障排查
+
 ### 3. 使用
 
 最简单的方式只需要记住一个入口：
