@@ -41,6 +41,13 @@ validation tools. Keep compatibility with both Claude Code and Codex users.
 
 - Financial data must come from at least two independent sources when the skill
   requires verification.
+- When the Longbridge MCP is available, use its read-only market and company
+  tools as the structured acquisition layer described in
+  `skills/longbridge-data.md`. Treat all Longbridge tools as one aggregated
+  third-party source, not as multiple independent sources.
+- Repository research workflows must never use Longbridge order, DCA, alert,
+  watchlist, or community write tools. Do not read private account data unless
+  the user explicitly requests portfolio analysis that requires it.
 - Use exact arithmetic tools for market cap, valuation, cross-source checks, and
   scenario analysis:
   `python3 tools/financial_rigor.py ...`

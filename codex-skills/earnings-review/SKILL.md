@@ -52,7 +52,9 @@ This skill is generated from `skills/earnings-review.md` so Claude Code and Code
 3. **管理层致股东信**（如有年报）：完整阅读
 4. **投资者日/分析师日材料**（如近期有）
 
-如果无法获取完整原文，按 `skills/financial-data.md` 规范使用标准数据源拼凑（美股：macrotrends+stockanalysis；港股：aastocks+macrotrends；A股：东方财富+巨潮资讯），但必须标注"非原始财报，来自第三方汇总"，且关键数据两源误差>1%须标记。
+Longbridge MCP 可用时，按 `skills/longbridge-data.md` 调用 `financial_report_latest`、`financial_statement`、`business_segments`、`consensus` 等只读工具生成结构化对照底稿。Longbridge 数据用于提取和交叉检查，不得替代财报原文，也不能由两个 Longbridge 工具互相构成双源验证。
+
+如果无法获取完整原文，按 `skills/financial-data.md` 规范使用标准数据源拼凑（Longbridge + 另一独立来源；或美股 macrotrends+stockanalysis；港股 aastocks+macrotrends；A股 东方财富+巨潮资讯），但必须标注"非原始财报，来自第三方汇总"，且关键数据两源误差>1%须标记。
 
 ### 第二步：核心财务数据提取与验证
 

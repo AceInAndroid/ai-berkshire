@@ -209,8 +209,10 @@ AI Berkshire 确保：**同样的输入 → 结构一致、深度一致的输出
 
 | Skill | 用途 | 适合场景 |
 |-------|------|---------|
+| [`/research`](skills/research.md) | 一键投研入口 | 只输入公司名，自动路由 Longbridge、研究框架、验证工具和报告输出 |
 | [`/dyp-ask`](skills/dyp-ask.md) | 段永平问答 | 以段永平的方式思考任何问题——商业、投资、人生 |
 | [`/financial-data`](skills/financial-data.md) | 财务数据获取与交叉验证规范 | 确保关键数据来自2个独立来源，误差>1%告警 |
+| [`/longbridge-data`](skills/longbridge-data.md) | Longbridge MCP 只读数据底稿 | 结构化获取行情、财报、估值和公司数据，并接入双源验证 |
 | [`/wechat-article`](skills/wechat-article.md) | 微信公众号文章 | 作者、编辑、读者三Agent协作，产出可发布文章 |
 
 ---
@@ -277,7 +279,41 @@ cd ai-berkshire
 
 仓库同时维护三套入口：`skills/*.md` 是 Claude Code command 源文件；`codex-skills/*/SKILL.md` 是 Codex skill 包，由 `scripts/sync-codex-skills.py` 从 `skills/*.md` 生成；`codex-prompts/*.md` 是可选的 Codex slash prompt 兼容层。
 
+### 2.1 接入 Longbridge MCP（推荐）
+
+Longbridge 为投研流程提供结构化行情、公司、财报、估值、股东、机构和新闻数据。OAuth 凭证保存在用户环境，不提交到仓库：
+
+```bash
+codex mcp add longbridge --url https://mcp.longbridge.com
+codex mcp list
+```
+
+首次添加时按浏览器提示完成 OAuth 授权，然后重启 Codex。完整的数据来源边界、双源验证和只读安全规则参见 [`docs/longbridge-mcp.md`](docs/longbridge-mcp.md)。
+
+推荐先阅读：
+
+- [`docs/longbridge-ai-berkshire.md`](docs/longbridge-ai-berkshire.md)：Longbridge 如何进入 AI Berkshire 的取数、验证、估值和报告链路
+- [`docs/longbridge-mcp.md`](docs/longbridge-mcp.md)：Codex/Claude/通用客户端配置、OAuth、区域端点、验证和故障排查
+
 ### 3. 使用
+
+最简单的方式只需要记住一个入口：
+
+```text
+/research 腾讯
+/research 苹果 快速
+/research 微软 最新财报
+/research 腾讯 阿里 美团 对比
+/research AI算力 筛选
+```
+
+Codex 用户使用：
+
+```text
+使用 research 研究腾讯
+```
+
+`research` 会自动选择 `investment-research`、`earnings-review`、`news-pulse`、`investment-checklist`、`industry-funnel` 等工作流，并自动接入 Longbridge、双源验证、`financial_rigor.py` 和 `report_audit.py`。
 
 在 Claude Code 中直接调用：
 
@@ -307,6 +343,7 @@ cd ai-berkshire
 
 # 思维工具
 /dyp-ask 拼多多的护城河到底在哪里？
+/longbridge-data AAPL.US 公司、财报和估值底稿
 /wechat-article 大模型OPD技术解读
 ```
 
@@ -314,6 +351,7 @@ cd ai-berkshire
 
 ```text
 使用 investment-research 研究腾讯
+使用 longbridge-data 为 AAPL.US 生成公司、财报和估值数据底稿
 使用 earnings-review 分析 PDD 2025年报
 使用 industry-funnel 筛选 AI算力
 使用 bottleneck-hunter 扫描 AI基础设施瓶颈
@@ -665,7 +703,7 @@ cd ai-berkshire
 - [x] 深度系列长文（`/deep-company-series` 8篇12万字）
 - [ ] 历史回测：AI研报 vs 实际股价表现
 - [ ] 宏观经济周期分析框架
-- [ ] 基于MCP的实时数据接入（Wind/Bloomberg/Yahoo Finance）
+- [x] 基于 MCP 的实时数据接入（Longbridge：行情、基本面、估值、新闻、账户只读能力）
 
 ---
 
