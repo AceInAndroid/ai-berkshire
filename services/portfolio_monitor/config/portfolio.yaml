@@ -1,0 +1,213 @@
+version: "2026-07-20"
+name: "AI Berkshire 100万元多资产组合"
+source_document: "reports/market/100万元组合加入科技ETF-Beta执行计划-20260720.md"
+initial_capital_cny: 1000000
+base_currency: CNY
+equity_weight_cap: 0.42
+technology_weight_cap: 0.15
+shadow_mode_days: 5
+
+initial_authorization:
+  cash: {minimum_cny: 200000, maximum_cny: 300000}
+  fixed_income: {minimum_cny: 100000, maximum_cny: 100000}
+  gold: {minimum_cny: 20000, maximum_cny: 20000}
+  dividend: {minimum_cny: 30000, maximum_cny: 50000, conditional: true}
+  broad_market: {minimum_cny: 30000, maximum_cny: 30000}
+  technology: {minimum_cny: 25000, maximum_cny: 25000}
+  risk_assets: {minimum_cny: 105000, maximum_cny: 125000}
+
+runtime:
+  timezone: Asia/Shanghai
+  stale_after_minutes: 10
+  cross_source_max_deviation: 0.005
+  alert_cooldown_minutes: 30
+  http_host: 127.0.0.1
+  http_port: 8765
+  streamable_http_path: /mcp
+
+costs:
+  commission_rate: 0.0003
+  minimum_commission_cny: 5
+  slippage_rate: 0.0005
+  stamp_duty_rate: 0
+  annual_cash_yield: 0.012
+
+modules:
+  cash:
+    name: 现金与货币ETF
+    target_weight: 0.30
+    target_amount_cny: 300000
+    hard_cap_weight: 0.50
+  fixed_income:
+    name: 短债与国债
+    target_weight: 0.20
+    target_amount_cny: 200000
+    hard_cap_weight: 0.20
+  gold:
+    name: 黄金
+    target_weight: 0.08
+    target_amount_cny: 80000
+    hard_cap_weight: 0.08
+  dividend:
+    name: 红利与低波
+    target_weight: 0.15
+    target_amount_cny: 150000
+    hard_cap_weight: 0.15
+  broad_market:
+    name: 沪深300与中证A500
+    target_weight: 0.12
+    target_amount_cny: 120000
+    hard_cap_weight: 0.12
+  technology:
+    name: 科技ETF卫星Beta
+    target_weight: 0.15
+    target_amount_cny: 150000
+    hard_cap_weight: 0.15
+
+instruments:
+  - symbol: 511880.SH
+    name: 银华日利ETF
+    module: cash
+    target_amount_cny: 300000
+    role: primary
+  - symbol: 511990.SH
+    name: 华宝添益ETF
+    module: cash
+    target_amount_cny: 0
+    role: alternative
+    alternative_for: 511880.SH
+  - symbol: 511360.SH
+    name: 短融ETF海富通
+    module: fixed_income
+    target_amount_cny: 120000
+    role: primary
+    anchors: {support: 113.574, ma20_reference: 113.646}
+  - symbol: 511010.SH
+    name: 国债ETF国泰
+    module: fixed_income
+    target_amount_cny: 80000
+    role: primary
+    anchors: {support: 140.540, ma20_reference: 140.743}
+  - symbol: 518880.SH
+    name: 黄金ETF华安
+    module: gold
+    target_amount_cny: 80000
+    role: primary
+    anchors: {support: 8.224, first_zone_high: 8.35, ma20_reference: 8.451}
+  - symbol: 159934.SZ
+    name: 黄金ETF易方达
+    module: gold
+    target_amount_cny: 0
+    role: alternative
+    alternative_for: 518880.SH
+    anchors: {support: 8.590, ma20_reference: 8.829}
+  - symbol: 512890.SH
+    name: 红利低波ETF华泰柏瑞
+    module: dividend
+    target_amount_cny: 90000
+    role: primary
+    anchors: {first_zone_low: 1.14, first_zone_high: 1.16, deep_zone_low: 1.10, deep_zone_high: 1.12}
+  - symbol: 510880.SH
+    name: 红利ETF华泰柏瑞
+    module: dividend
+    target_amount_cny: 60000
+    role: secondary
+    anchors: {first_zone_low: 3.15, first_zone_high: 3.19, deep_zone_low: 3.04, deep_zone_high: 3.08}
+  - symbol: 510300.SH
+    name: 沪深300ETF华泰柏瑞
+    module: broad_market
+    target_amount_cny: 70000
+    role: primary
+    anchors: {support: 4.546, first_zone_low: 4.55, first_zone_high: 4.68, first_confirm: 4.73, second_confirm: 4.86}
+  - symbol: 563360.SH
+    name: A500ETF华泰柏瑞
+    module: broad_market
+    target_amount_cny: 50000
+    role: secondary
+    anchors: {support: 1.245, first_zone_low: 1.245, first_zone_high: 1.270, first_confirm: 1.305, second_confirm: 1.360}
+  - symbol: 159338.SZ
+    name: 中证A500ETF国泰
+    module: broad_market
+    target_amount_cny: 0
+    role: alternative
+    alternative_for: 563360.SH
+    anchors: {support: 1.179, first_confirm: 1.236, second_confirm: 1.288}
+  - symbol: 159995.SZ
+    name: 芯片ETF华夏
+    module: technology
+    target_amount_cny: 70000
+    role: core
+    anchors: {support: 1.150, first_confirm: 1.271, ma5_reference: 1.322, ma20_reference: 1.492}
+  - symbol: 515050.SH
+    name: 通信ETF华夏
+    module: technology
+    target_amount_cny: 45000
+    role: cpo
+    anchors: {support: 0.988, first_confirm: 1.096, ma5_reference: 1.135, ma20_reference: 1.250}
+  - symbol: 512480.SH
+    name: 半导体ETF国联安
+    module: technology
+    target_amount_cny: 20000
+    role: broad_semiconductor
+    anchors: {support: 1.006, first_confirm: 1.114, ma5_reference: 1.162, ma20_reference: 1.320}
+  - symbol: 159516.SZ
+    name: 半导体设备ETF国泰
+    module: technology
+    target_amount_cny: 15000
+    role: equipment
+    anchors: {support: 0.640, first_confirm: 0.729, ma5_reference: 0.754, ma20_reference: 0.859}
+
+technology_stages:
+  - stage: 1
+    name: 当前试错仓
+    cumulative_amount_cny: 25000
+    allocations: {159995.SZ: 15000, 515050.SH: 10000}
+  - stage: 2
+    name: 出清强度明显下降
+    cumulative_amount_cny: 70000
+    allocations: {159995.SZ: 40000, 515050.SH: 20000, 512480.SH: 10000}
+    minimum_conditions: 3
+  - stage: 3
+    name: 风险偏好形成趋势
+    cumulative_amount_cny: 115000
+    allocations: {159995.SZ: 60000, 515050.SH: 35000, 512480.SH: 20000}
+  - stage: 4
+    name: 设备方向确认
+    cumulative_amount_cny: 150000
+    allocations: {159995.SZ: 70000, 515050.SH: 45000, 512480.SH: 20000, 159516.SZ: 15000}
+
+technology_risk:
+  stop_adding_drawdown: 0.08
+  review_drawdown: 0.10
+  reduce_drawdown: 0.12
+  reduce_fraction: 0.333333
+  rebalance_trigger_weight: 0.18
+  target_weight_after_rebalance: 0.15
+
+portfolio_drawdown_ladder:
+  - {threshold: 0.05, severity: watch, action: pause_technology_stage_3_4}
+  - {threshold: 0.08, severity: risk, action: stop_high_beta_adds, minimum_cash_cny: 350000}
+  - {threshold: 0.12, severity: risk, action: reduce_technology_and_weak_a500, equity_cap: 0.32}
+  - {threshold: 0.16, severity: emergency, action: reduce_total_equity, equity_cap: 0.25}
+  - {threshold: 0.18, severity: emergency, action: hard_defense, equity_cap: 0.20}
+  - {threshold: 0.20, severity: emergency, action: portfolio_reset, equity_cap: 0.15}
+
+market_recovery_conditions:
+  required_for_recovering: 5
+  conditions:
+    - limit_down_below_100
+    - advances_exceed_declines_two_days
+    - median_return_positive_two_days
+    - csi1000_stops_new_low_and_outperforms_csi300
+    - growth_index_outperforms_three_of_five_days
+    - semiconductor_breadth_above_50
+    - technology_up_volume_down_volume_healthy
+    - margin_stabilizes_and_etf_inflows
+
+external_indicators:
+  - {symbol: "^VIX", name: VIX, provider: yahoo}
+  - {symbol: "^IXIC", name: 纳斯达克综合指数, provider: yahoo}
+  - {symbol: "^SOX", name: 费城半导体指数, provider: yahoo}
+  - {symbol: "GC=F", name: COMEX黄金, provider: yahoo}
+  - {symbol: "DX-Y.NYB", name: 美元指数DXY, provider: yahoo}
+  - {symbol: "CNY=X", name: USD/CNY, provider: yahoo}

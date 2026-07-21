@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="dark">
+  <meta name="theme-color" content="#0b0d0f">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 64 64%27%3E%3Crect width=%2764%27 height=%2764%27 rx=%2710%27 fill=%27%230b0d0f%27/%3E%3Cpath d=%27M14 45V34h8v11zm14 0V24h8v21zm14 0V13h8v32z%27 fill=%27%23d6a84b%27/%3E%3C/svg%3E">
+  <title>AI Berkshire · 组合监控驾驶舱</title>
+  <link rel="stylesheet" href="/dashboard/assets/dashboard.css">
+</head>
+<body>
+  <div class="ambient ambient-a"></div>
+  <div class="ambient ambient-b"></div>
+  <header class="topbar">
+    <div class="brand-block">
+      <div class="brand-mark" aria-hidden="true"><span></span><span></span><span></span></div>
+      <div>
+        <p class="eyebrow">AI BERKSHIRE / PORTFOLIO SYSTEM</p>
+        <h1>组合监控驾驶舱</h1>
+      </div>
+    </div>
+    <div class="topbar-actions">
+      <div class="system-clock">
+        <span id="market-status" class="status-chip neutral">正在连接</span>
+        <span id="last-updated" class="timestamp">--</span>
+      </div>
+      <button id="refresh-button" class="refresh-button" type="button">
+        <span class="refresh-icon" aria-hidden="true">↻</span>
+        <span>立即扫描</span>
+        <small id="countdown">60s</small>
+      </button>
+    </div>
+  </header>
+
+  <main id="dashboard" class="dashboard-shell" aria-live="polite">
+    <section id="loading-state" class="loading-state">
+      <div class="loading-line"></div>
+      <p>正在读取组合快照与市场状态</p>
+      <div class="skeleton-grid">
+        <i></i><i></i><i></i><i></i><i></i><i></i>
+      </div>
+    </section>
+
+    <section id="error-state" class="error-state hidden">
+      <span class="error-code">DATA LINK INTERRUPTED</span>
+      <h2>数据连接暂时不可用</h2>
+      <p id="error-message">请稍后重试。</p>
+      <button id="retry-button" type="button">重新读取</button>
+    </section>
+
+    <div id="dashboard-content" class="hidden">
+      <section class="hero-grid section-reveal">
+        <article class="regime-hero" id="regime-hero"></article>
+        <div class="metric-rail" id="metric-rail"></div>
+      </section>
+
+      <section class="analysis-grid section-reveal delay-1">
+        <article class="panel performance-panel">
+          <header class="panel-header">
+            <div><span class="section-index">01</span><h2>净值与回撤</h2></div>
+            <span id="history-range" class="panel-meta">成立以来</span>
+          </header>
+          <div id="performance-chart" class="chart-wrap"></div>
+        </article>
+        <article class="panel allocation-panel">
+          <header class="panel-header">
+            <div><span class="section-index">02</span><h2>资产配置</h2></div>
+            <span class="panel-meta">实际 / 目标</span>
+          </header>
+          <div id="allocation-list" class="allocation-list"></div>
+        </article>
+      </section>
+
+      <section class="market-beta-grid section-reveal delay-2">
+        <article class="panel market-panel">
+          <header class="panel-header">
+            <div><span class="section-index">03</span><h2>市场风险偏好</h2></div>
+            <span id="recovery-score" class="panel-meta">恢复条件 --/8</span>
+          </header>
+          <div id="market-breadth" class="breadth-grid"></div>
+          <div class="evidence-columns">
+            <div><h3>修复证据</h3><ul id="positive-evidence"></ul></div>
+            <div><h3>风险证据</h3><ul id="risk-evidence"></ul></div>
+          </div>
+        </article>
+        <article class="panel beta-panel" id="beta-panel">
+          <header class="panel-header">
+            <div><span class="section-index">04</span><h2>科技 Beta 控制台</h2></div>
+            <span id="beta-action" class="status-chip neutral">--</span>
+          </header>
+          <div id="beta-summary" class="beta-summary"></div>
+          <div id="stage-track" class="stage-track"></div>
+          <div id="beta-instruments" class="beta-instruments"></div>
+        </article>
+      </section>
+
+      <section class="panel signals-panel section-reveal delay-3">
+        <header class="panel-header">
+          <div><span class="section-index">05</span><h2>今日行动信号</h2></div>
+          <span id="signal-summary" class="panel-meta">--</span>
+        </header>
+        <div id="signal-groups" class="signal-groups"></div>
+      </section>
+
+      <section class="instruments-grid section-reveal delay-4">
+        <article class="panel instrument-panel">
+          <header class="panel-header">
+            <div><span class="section-index">06</span><h2>15只 ETF 雷达</h2></div>
+            <span class="panel-meta">价格 / 均线 / 数据质量</span>
+          </header>
+          <div class="table-scroll">
+            <table class="instrument-table">
+              <thead><tr><th>标的</th><th>模块</th><th>价格</th><th>当日</th><th>MA5</th><th>MA20</th><th>趋势</th><th>数据</th></tr></thead>
+              <tbody id="instrument-table-body"></tbody>
+            </table>
+          </div>
+        </article>
+        <aside class="side-stack">
+          <article class="panel external-panel">
+            <header class="panel-header compact"><div><span class="section-index">07</span><h2>海外风险</h2></div></header>
+            <div id="external-grid" class="external-grid"></div>
+          </article>
+          <article class="panel health-panel">
+            <header class="panel-header compact"><div><span class="section-index">08</span><h2>告警与健康</h2></div></header>
+            <div id="health-content"></div>
+          </article>
+        </aside>
+      </section>
+
+      <footer class="dashboard-footer">
+        <span>只读研究系统 · 不连接券商写接口 · 不自动交易</span>
+        <span id="config-version">CONFIG --</span>
+      </footer>
+    </div>
+  </main>
+
+  <div id="toast" class="toast" role="status"></div>
+  <script src="/dashboard/assets/dashboard.js" defer></script>
+</body>
+</html>

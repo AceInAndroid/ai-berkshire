@@ -292,8 +292,22 @@ codex mcp list
 
 推荐先阅读：
 
+- [`docs/environment-bootstrap.md`](docs/environment-bootstrap.md)：在新电脑复刻 Codex、AI Berkshire、Vibe-Trading 与 Longbridge MCP
 - [`docs/longbridge-ai-berkshire.md`](docs/longbridge-ai-berkshire.md)：Longbridge 如何进入 AI Berkshire 的取数、验证、估值和报告链路
 - [`docs/longbridge-mcp.md`](docs/longbridge-mcp.md)：Codex/Claude/通用客户端配置、OAuth、区域端点、验证和故障排查
+
+### 2.2 可选：本地组合监控服务
+
+[`services/portfolio_monitor`](services/portfolio_monitor) 提供确定性的组合台账、风险规则、回测、只读仪表盘与 MCP 接口，不连接券商下单：
+
+```bash
+cd services/portfolio_monitor
+uv sync --extra dev
+uv run portfolio-monitor init-db
+uv run portfolio-monitor serve --transport http
+```
+
+服务默认监听 `127.0.0.1:8765`，仪表盘位于 `http://127.0.0.1:8765/dashboard`。完整配置和安全边界见其 [`README.md`](services/portfolio_monitor/README.md)。
 
 ### 3. 使用
 
