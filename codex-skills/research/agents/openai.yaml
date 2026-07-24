@@ -1,0 +1,4 @@
+interface:
+  display_name: "AI Berkshire 投研路由"
+  short_description: "输入公司或投资问题，自动选择研究、财报、估值和跟踪流程"
+  default_prompt: "使用 $research 研究这家公司或投资问题，并自动选择正确的 AI Berkshire 工作流。"

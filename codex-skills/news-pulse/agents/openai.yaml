@@ -1,0 +1,4 @@
+interface:
+  display_name: "公司异动归因"
+  short_description: "建立事件时间线，解释大涨大跌并判断是否重审论文"
+  default_prompt: "使用 $news-pulse 调查这家公司近期异动的主要原因和论文影响。"

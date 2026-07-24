@@ -1,0 +1,4 @@
+interface:
+  display_name: "管理层研究"
+  short_description: "研究创始人、管理层、治理、激励和资本配置记录"
+  default_prompt: "使用 $management-deep-dive 深入研究这家公司及其管理层。"

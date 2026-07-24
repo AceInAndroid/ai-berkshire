@@ -48,6 +48,20 @@ validation tools. Keep compatibility with both Claude Code and Codex users.
 - Repository research workflows must never use Longbridge order, DCA, alert,
   watchlist, or community write tools. Do not read private account data unless
   the user explicitly requests portfolio analysis that requires it.
+- Treat Longbridge, Vibe-Trading, and TradingAgents-astock as aggregated sources;
+  tools that share the same underlying provider do not satisfy independent-source
+  verification. TradingAgents opinions are not financial-data sources.
+- Vibe-Trading is research-only: never enable shell tools or call file-write,
+  swarm, connector-selection, broker, account, or trading tools. The
+  Vibe backtest tool executes local strategy code and requires code review,
+  an isolated run directory, and explicit user authorization for that run. The
+  TradingAgents-astock adapter may run analysis jobs and query their status/results
+  only; never pass credentials, arbitrary endpoints, paths, or commands through MCP.
+- Default A-share fusion research to the adapter's `codex_native` plan: native
+  Codex subagents inherit the active conversation model and require no external
+  LLM provider. Run the original upstream TradingAgentsGraph only when the user
+  explicitly requests it and its separately configured provider is ready. Always
+  disclose which execution mode produced the report.
 - Use exact arithmetic tools for market cap, valuation, cross-source checks, and
   scenario analysis:
   `python3 tools/financial_rigor.py ...`

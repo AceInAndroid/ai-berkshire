@@ -1,0 +1,4 @@
+interface:
+  display_name: "去劣筛选：7条指标快速排除非一流公司"
+  short_description: "AI Berkshire 工作流：去劣筛选：7条指标快速排除非一流公司"
+  default_prompt: "使用 $quality-screen 按 AI Berkshire 方法完成这项请求。"

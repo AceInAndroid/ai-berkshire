@@ -1,0 +1,4 @@
+interface:
+  display_name: "行业选股漏斗"
+  short_description: "从行业或主题逐层筛选到少数高质量候选公司"
+  default_prompt: "使用 $industry-funnel 从这个行业或主题筛选值得深入研究的公司。"
