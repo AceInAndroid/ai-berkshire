@@ -17,5 +17,5 @@ done
 chmod +x "$ROOT"/tools/*.py "$ROOT"/tools/*.sh 2>/dev/null || true
 
 echo "Installed Codex skills to $DEST"
-echo "Run ./scripts/install-codex-prompts.sh if you want slash-command prompts."
-echo "Restart Codex to pick up new skills."
+echo 'Restart Codex App, open Skills, then choose AI Berkshire 投研路由 or invoke $research.'
+echo "Legacy custom prompts are optional and supported only as a deprecated CLI/IDE compatibility layer."

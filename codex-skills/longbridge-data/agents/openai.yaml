@@ -1,0 +1,4 @@
+interface:
+  display_name: "Longbridge MCP 只读投研数据底稿"
+  short_description: "AI Berkshire 工作流：Longbridge MCP 只读投研数据底稿"
+  default_prompt: "使用 $longbridge-data 按 AI Berkshire 方法完成这项请求。"

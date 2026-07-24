@@ -1,0 +1,4 @@
+interface:
+  display_name: "投资组合复盘"
+  short_description: "检查持仓结构、集中度、相关风险和下一步研究动作"
+  default_prompt: "使用 $portfolio-review 复盘这个投资组合并给出风险与研究建议。"

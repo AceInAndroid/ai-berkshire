@@ -1,0 +1,4 @@
+interface:
+  display_name: "A股融合研究"
+  short_description: "融合多角色辩论、市场资金证据和长期价值判断"
+  default_prompt: "使用 $tradingagents-astock 对这家 A 股公司做只读融合研究。"

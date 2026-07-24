@@ -1,0 +1,4 @@
+interface:
+  display_name: "买入前检查"
+  short_description: "检查公司质量、估值安全边际、风险和关键反证"
+  default_prompt: "使用 $investment-checklist 判断这些候选公司是否通过买入前检查。"

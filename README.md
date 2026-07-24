@@ -168,7 +168,7 @@ AI Berkshire 确保：**同样的输入 → 结构一致、深度一致的输出
 
 ---
 
-## Skills 一览（18个）
+## Skills 一览
 
 ### 🔬 深度研究类
 
@@ -213,6 +213,7 @@ AI Berkshire 确保：**同样的输入 → 结构一致、深度一致的输出
 | [`/dyp-ask`](skills/dyp-ask.md) | 段永平问答 | 以段永平的方式思考任何问题——商业、投资、人生 |
 | [`/financial-data`](skills/financial-data.md) | 财务数据获取与交叉验证规范 | 确保关键数据来自2个独立来源，误差>1%告警 |
 | [`/longbridge-data`](skills/longbridge-data.md) | Longbridge MCP 只读数据底稿 | 结构化获取行情、财报、估值和公司数据，并接入双源验证 |
+| [`/tradingagents-astock`](skills/tradingagents-astock.md) | A 股融合研究 | TradingAgents 多角色辩论 + Vibe 行情/因子/回测 + AI Berkshire 价值研究 |
 | [`/wechat-article`](skills/wechat-article.md) | 微信公众号文章 | 作者、编辑、读者三Agent协作，产出可发布文章 |
 
 ---
@@ -272,12 +273,12 @@ git clone https://github.com/xbtlin/ai-berkshire.git
 cd ai-berkshire
 ./scripts/install-codex-skills.sh
 
-# 可选：安装 Codex slash prompts 到 ~/.codex/prompts
-# 用于获得接近 Claude Code 的 /investment-research 体验
+# 可选兼容层：安装已弃用的 Codex custom prompts 到 ~/.codex/prompts
+# 仅用于 CLI/IDE 的 /prompts:* 入口；Codex App 优先使用 Skills
 ./scripts/install-codex-prompts.sh
 ```
 
-仓库同时维护三套入口：`skills/*.md` 是 Claude Code command 源文件；`codex-skills/*/SKILL.md` 是 Codex skill 包，由 `scripts/sync-codex-skills.py` 从 `skills/*.md` 生成；`codex-prompts/*.md` 是可选的 Codex slash prompt 兼容层。
+仓库同时维护三套入口：`skills/*.md` 是 Claude Code command 源文件；`codex-skills/*/SKILL.md` 是 Codex skill 包，由 `scripts/sync-codex-skills.py` 从 `skills/*.md` 生成，并为 Codex App 生成 `agents/openai.yaml` 卡片元数据；`codex-prompts/*.md` 是已弃用但暂时保留的 CLI/IDE slash prompt 兼容层。
 
 ### 2.1 接入 Longbridge MCP（推荐）
 
@@ -292,7 +293,8 @@ codex mcp list
 
 推荐先阅读：
 
-- [`docs/environment-bootstrap.md`](docs/environment-bootstrap.md)：在新电脑复刻 Codex、AI Berkshire、Vibe-Trading 与 Longbridge MCP
+- [`docs/environment-bootstrap.md`](docs/environment-bootstrap.md)：在新电脑复刻 Codex、AI Berkshire、TradingAgents、Vibe-Trading 与 Longbridge MCP
+- [`docs/tradingagents-astock-mcp.md`](docs/tradingagents-astock-mcp.md)：TradingAgents-astock 与 AI Berkshire 的研究方法论、集成、使用教程、安装、排错和验收
 - [`docs/longbridge-ai-berkshire.md`](docs/longbridge-ai-berkshire.md)：Longbridge 如何进入 AI Berkshire 的取数、验证、估值和报告链路
 - [`docs/longbridge-mcp.md`](docs/longbridge-mcp.md)：Codex/Claude/通用客户端配置、OAuth、区域端点、验证和故障排查
 
@@ -308,6 +310,27 @@ uv run portfolio-monitor serve --transport http
 ```
 
 服务默认监听 `127.0.0.1:8765`，仪表盘位于 `http://127.0.0.1:8765/dashboard`。完整配置和安全边界见其 [`README.md`](services/portfolio_monitor/README.md)。
+
+### 2.3 A 股融合研究 MCP
+
+Vibe-Trading v0.1.12 使用其原生 `vibe-trading-mcp`；TradingAgents-astock v0.2.21 通过本仓库的异步适配器接入：
+
+```bash
+python3 -m venv ~/.local/share/vibe-trading/venv
+~/.local/share/vibe-trading/venv/bin/python -m pip install 'vibe-trading-ai==0.1.12'
+codex mcp add vibe-trading -- ~/.local/share/vibe-trading/venv/bin/vibe-trading-mcp
+
+cd services/tradingagents_astock_mcp
+uv sync --extra dev
+uv run pytest
+
+uv venv ~/.local/share/tradingagents-astock/venv --python 3.12
+uv pip install \
+  --python ~/.local/share/tradingagents-astock/venv/bin/python \
+  'git+https://github.com/simonlin1212/TradingAgents-astock.git@531176ac3161ca13db263495c18b8e0f09fc0eb2'
+```
+
+MCP 适配器与 TradingAgents worker 使用两个虚拟环境，避免不兼容的 `httpx` 依赖互相污染。默认 `codex_native` 模式直接使用 Codex App 当前对话模型及其原生子代理，无需额外 Provider、模型名或 API Key；原版 `TradingAgentsGraph` 保留为可选模式。注册命令与双模式说明见 [`docs/tradingagents-astock-mcp.md`](docs/tradingagents-astock-mcp.md)。融合流程默认只读：Codex 的 Vibe MCP 配置使用 `enabled_tools` allowlist，不开放文件写入、Swarm、Shell、连接器、账户或交易工具；其本地代码回测必须先审查并由用户明确授权后临时开放。TradingAgents 不接受凭证、任意路径/endpoint/命令，也不提供交易能力。
 
 ### 3. 使用
 
@@ -361,7 +384,21 @@ Codex 用户使用：
 /wechat-article 大模型OPD技术解读
 ```
 
-在 Codex 中安装后重启 Codex，然后直接按 skill 名称描述任务，例如：
+在 Codex App 中安装后重启 App，从 Skills 页面选择卡片，或在输入框中显式引用 `$skill-name`。最常用的入口如下：
+
+| Codex App 入口 | 适用问题 | 示例 |
+|---|---|---|
+| `$research` | 不确定使用哪个工作流；让系统自动路由 | `使用 $research 研究特斯拉当前是否值得买` |
+| `$investment-research` | 公司长期价值、商业模式与护城河 | `使用 $investment-research 研究腾讯` |
+| `$earnings-review` | 最新财报、业绩与投资论文变化 | `使用 $earnings-review 精读特斯拉 2026Q2 财报` |
+| `$investment-checklist` | 买入前质量、估值和风险检查 | `使用 $investment-checklist 检查贵州茅台` |
+| `$tradingagents-astock` | A 股多空、资金、政策与价值融合 | `使用 $tradingagents-astock 研究 600519.SH` |
+| `$news-pulse` | 公司突然大涨大跌或事件归因 | `使用 $news-pulse 调查宁德时代今天为什么大跌` |
+| `$industry-funnel` | 从行业或主题筛选候选公司 | `使用 $industry-funnel 筛选 AI 算力公司` |
+| `$portfolio-review` | 持仓结构与组合风险复盘 | `使用 $portfolio-review 复盘这个组合` |
+| `$thesis-tracker` | 买入后的催化剂与失效条件跟踪 | `使用 $thesis-tracker 更新拼多多投资论文` |
+
+`$research` 的内置路由表会识别财报、估值、买入时点、护城河、异动、行业筛选、A 股融合和持仓跟踪等意图。也可以直接按 Skill 名称描述任务，例如：
 
 ```text
 使用 investment-research 研究腾讯
@@ -372,7 +409,7 @@ Codex 用户使用：
 使用 wechat-article 写大模型OPD技术解读
 ```
 
-如果安装了 Codex slash prompts，重启 Codex 后也可以在 `/` 菜单里搜索这些 prompt。Codex 官方的 custom prompt 入口通常显示为 `prompts:<name>`，例如：
+如果安装了 Codex custom prompts，CLI 或 IDE 重启后还可以在 `/` 菜单里搜索兼容入口。该功能已被官方弃用，不是 Codex App 的推荐入口；旧命令通常显示为 `prompts:<name>`，例如：
 
 ```text
 /prompts:investment-research 腾讯
@@ -718,6 +755,7 @@ Codex 用户使用：
 - [ ] 历史回测：AI研报 vs 实际股价表现
 - [ ] 宏观经济周期分析框架
 - [x] 基于 MCP 的实时数据接入（Longbridge：行情、基本面、估值、新闻、账户只读能力）
+- [x] A 股融合研究 MCP（TradingAgents-astock 异步辩论 + Vibe-Trading 量化验证 + AI Berkshire 准出）
 
 ---
 

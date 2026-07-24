@@ -1,0 +1,4 @@
+interface:
+  display_name: "投资论文跟踪"
+  short_description: "把催化剂、观察指标和失效条件转成持续跟踪清单"
+  default_prompt: "使用 $thesis-tracker 更新这家公司的投资论文与观察清单。"

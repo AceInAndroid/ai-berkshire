@@ -1,0 +1,4 @@
+interface:
+  display_name: "深度公司系列：8 篇长文拆一家公司"
+  short_description: "AI Berkshire 工作流：深度公司系列：8 篇长文拆一家公司"
+  default_prompt: "使用 $deep-company-series 按 AI Berkshire 方法完成这项请求。"

@@ -169,7 +169,7 @@ Ask AI directly, and you have one context window. Four parallel Agents means 4×
 
 ---
 
-## Skills Overview (18 Skills)
+## Skills Overview
 
 ### 🔬 Deep Research
 
@@ -212,6 +212,7 @@ Ask AI directly, and you have one context window. Four parallel Agents means 4×
 |-------|---------|-------------|
 | [`/dyp-ask`](skills/dyp-ask.md) | Duan Yongping Q&A | Think through any question the Duan Yongping way — business, investing, life |
 | [`/financial-data`](skills/financial-data.md) | Financial data retrieval & cross-validation | Ensure key data comes from 2+ independent sources; alerts on >1% deviation |
+| [`/tradingagents-astock`](skills/tradingagents-astock.md) | A-share fusion research | TradingAgents debate + Vibe market/factor/backtest evidence + AI Berkshire synthesis |
 | [`/wechat-article`](skills/wechat-article.md) | WeChat article workflow | Author, editor, and reader Agents collaborate to produce a publishable article |
 
 ---
@@ -271,12 +272,18 @@ git clone https://github.com/xbtlin/ai-berkshire.git
 cd ai-berkshire
 ./scripts/install-codex-skills.sh
 
-# Optional: install Codex slash prompts to ~/.codex/prompts
-# for a Claude Code-like /investment-research entry point
+# Optional legacy compatibility: deprecated custom prompts for CLI/IDE
+# Codex App users should use Skills instead
 ./scripts/install-codex-prompts.sh
 ```
 
-The repository maintains three entry points: `skills/*.md` are the Claude Code command sources; `codex-skills/*/SKILL.md` are Codex skill packages generated from `skills/*.md` by `scripts/sync-codex-skills.py`; `codex-prompts/*.md` are an optional Codex slash-prompt compatibility layer.
+The repository maintains three entry points: `skills/*.md` are the Claude Code command sources; `codex-skills/*/SKILL.md` are Codex skill packages generated from `skills/*.md` by `scripts/sync-codex-skills.py`, including `agents/openai.yaml` card metadata for Codex App; `codex-prompts/*.md` are a deprecated CLI/IDE slash-prompt compatibility layer.
+
+### 2.1 Optional MCP Research Stack
+
+For A-share fusion research, AI Berkshire remains the final orchestrator. The default `codex_native` mode executes the TradingAgents role topology with the active Codex conversation model and inherited native subagents, requiring no separate provider, model name, or API key. The original asynchronous TradingAgents-astock v0.2.21 graph remains optional. Longbridge and Vibe-Trading v0.1.12 supply structured evidence. Each aggregator counts as at most one source, and shared underlying providers do not satisfy independent-source verification.
+
+See [`docs/environment-bootstrap.md`](docs/environment-bootstrap.md) and [`docs/tradingagents-astock-mcp.md`](docs/tradingagents-astock-mcp.md) for the research methodology, integration guidance, usage examples, isolated installation, troubleshooting, safety boundaries, and acceptance checks. The adapter and TradingAgents worker use separate virtual environments because their `httpx` constraints are incompatible. The default stack is research-only: no accounts, brokers, trading, shell tools, arbitrary paths/endpoints, or third-party file writes.
 
 ### 3. Use
 
@@ -311,7 +318,21 @@ Invoke directly in Claude Code:
 /wechat-article Explain OPD for large language models
 ```
 
-After installing for Codex, restart Codex and refer to skills by name, for example:
+After installing, restart Codex App and choose a card from **Skills**, or explicitly mention `$skill-name` in the composer. Common entry points are:
+
+| Codex App entry | Use it for | Example |
+|---|---|---|
+| `$research` | Automatic routing when you do not know which workflow fits | `Use $research to assess whether Tesla is worth buying now` |
+| `$investment-research` | Long-term company quality, business model, and moat | `Use $investment-research to research Tencent` |
+| `$earnings-review` | Latest earnings and thesis changes | `Use $earnings-review to review Tesla 2026 Q2 results` |
+| `$investment-checklist` | Pre-buy quality, valuation, and risk checks | `Use $investment-checklist to check Kweichow Moutai` |
+| `$tradingagents-astock` | A-share value plus market, flow, and policy evidence | `Use $tradingagents-astock to research 600519.SH` |
+| `$news-pulse` | Sudden price moves and event attribution | `Use $news-pulse to explain CATL's move today` |
+| `$industry-funnel` | Screen an industry down to investable candidates | `Use $industry-funnel to screen AI compute companies` |
+| `$portfolio-review` | Portfolio structure and risk review | `Use $portfolio-review to review this portfolio` |
+| `$thesis-tracker` | Post-buy catalysts and invalidation tracking | `Use $thesis-tracker to update the PDD thesis` |
+
+The built-in `$research` routing table recognizes earnings, valuation, entry timing, moat, price moves, industry screens, A-share fusion research, and portfolio tracking. You can also refer to a skill by name:
 
 ```text
 Use investment-research to research Tencent
@@ -321,7 +342,7 @@ Use bottleneck-hunter to scan AI infrastructure bottlenecks
 Use wechat-article to write an OPD explainer for large language models
 ```
 
-If you install Codex slash prompts, restart Codex and search for them in the `/` menu. Codex's official custom prompt entry point usually appears as `prompts:<name>`, for example:
+If you install legacy Codex custom prompts, restart the CLI or IDE and search for them in the `/` menu. Custom prompts are deprecated and are not the recommended Codex App entry point; legacy commands usually appear as `prompts:<name>`, for example:
 
 ```text
 /prompts:investment-research Tencent
@@ -668,7 +689,8 @@ The four masters aren't just dividing labor — they're designed to **challenge 
 - [x] Deep company series (`/deep-company-series` — 8-part, ~120K words)
 - [ ] Historical backtesting: AI research reports vs. actual stock price performance
 - [ ] Macroeconomic cycle analysis framework
-- [ ] Real-time data feeds via MCP (Wind / Bloomberg / Yahoo Finance)
+- [x] Structured market-data access via MCP (Longbridge and Vibe-Trading)
+- [x] Read-only MCP research stack (Longbridge + asynchronous TradingAgents-astock + Vibe-Trading)
 
 ---
 

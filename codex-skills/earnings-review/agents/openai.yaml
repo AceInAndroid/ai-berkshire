@@ -1,0 +1,4 @@
+interface:
+  display_name: "财报精读"
+  short_description: "从一手披露核验业绩、预期差、现金流和论文变化"
+  default_prompt: "使用 $earnings-review 精读这家公司最新或指定期间的财报。"

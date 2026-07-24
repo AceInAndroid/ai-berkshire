@@ -20,6 +20,18 @@ This skill is generated from `skills/financial-data.md` so Claude Code and Codex
 
 ## 数据源优先级
 
+### 聚合 MCP 的独立性边界
+
+Longbridge、Vibe-Trading 和 TradingAgents-astock 都可能汇总多个底层供应商。交叉验证时必须按真实数据血缘计数：
+
+1. 同一个 MCP 内的多个工具最多算一个聚合来源。
+2. 不同 MCP 若引用同一供应商、同一网页或同一公告，仍只算一个来源。
+3. TradingAgents 的 Agent 报告、辩论和最终信号是分析观点，不是财务数据来源。
+4. Vibe-Trading 的行情、因子和回测可验证市场行为，但不能替代公司/交易所原始披露。
+5. 原始年报、交易所公告、SEC/HKEX/巨潮披露发生冲突时优先级最高。
+
+每条关键数据尽量记录 `provider`、原始 URL/文档、抓取时间、报告期、币种和单位，不能只记录 MCP 工具名。
+
 ### Longbridge MCP 的定位
 
 Longbridge MCP 可用时，优先用它获取**带时间戳的结构化底稿**，包括实时行情、公司资料、财务报表、估值历史、业务分部、机构评级、股东、新闻和监管文件索引。具体取数流程参见 `skills/longbridge-data.md`。
